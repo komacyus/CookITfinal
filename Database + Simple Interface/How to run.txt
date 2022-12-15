@@ -1,0 +1,4 @@
+Android Manifest'e aktiviteleri eklemeyi unutmayın.
+xml dosyaları gui ile alakalı.
+db implementation dosyası komple aynı klasörde zaten
+build gradle dependencies kısmına room runtime, room compiler ve lifecycle import edin
