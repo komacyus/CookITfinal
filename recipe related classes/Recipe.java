@@ -23,7 +23,7 @@ public class Recipe {
         String nameOfIngredient, inputType;
         int inputTypeInt;
         Ingredient ingredient;
-        int indexOfIngredient = -1;
+       
         while(sc.hasNextLine()){
             line = sc.nextLine();
             if(line.charAt(0) == "*"){
@@ -44,12 +44,7 @@ public class Recipe {
                 else if(inputType.equalsIgnoreCase("glass")){
                     inputTypeInt = 3;
                 }
-                
-                for (int i = 0; i < ingredientTypes.length; i++){
-                    if (ingredientTypes[i].name == name){
-                        indexOfIngredient = i;
-                    }
-                }
+            
 
                 ingredient = ingredientTypes[indexOfIngredient];
                 
@@ -62,6 +57,16 @@ public class Recipe {
         }
     }
 
+    public int findIndexOfIngredient(String name){
+        int indexOfIngredient = -1;
+
+        for (int i = 0; i < ingredientTypes.length; i++){
+            if (ingredientTypes[i].name == name){
+                    indexOfIngredient = i;
+            }
+        }
+        return indexOfIngredient;
+    }
 
     public String getName() {
         return name;
