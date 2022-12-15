@@ -20,7 +20,7 @@ public class CurrentIngredientsActivity extends AppCompatActivity {
         add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(CurrentIngredientsActivity.this, Addition.class);
+                Intent i = new Intent(CurrentIngredientsActivity.this, AdditionActivity.class);
                 startActivity(i);
             }
         });
@@ -28,7 +28,7 @@ public class CurrentIngredientsActivity extends AppCompatActivity {
         remove.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(CurrentIngredientsActivity.this, Deletion.class);
+                Intent i = new Intent(CurrentIngredientsActivity.this, DeletionActivity.class);
                 startActivity(i);
             }
         });

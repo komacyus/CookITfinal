@@ -8,35 +8,33 @@ import android.widget.EditText;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.ViewModelProvider;
 
-import java.util.List;
-
-public class Deletion extends AppCompatActivity {
+public class AdditionActivity extends AppCompatActivity {
+    static int row = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.deletion);
+        setContentView(R.layout.activity_addition);
         IngViewModel viewModel = new ViewModelProvider(this).get(IngViewModel.class);
-        Button delList = findViewById(R.id.button2);
+        Button addList = findViewById(R.id.button2);
         EditText edited = findViewById(R.id.editTextTextPersonName2);
         EditText multi = findViewById(R.id.editTextTextMultiLine);
         multi.setEnabled(false);
-        delList.setOnClickListener(new View.OnClickListener() {
+        EditText number = findViewById(R.id.editTextNumber);
+        addList.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String txt = edited.getText().toString();
-                CIngredient c = new CIngredient(txt,1);
-
-                if(!c.name.equals("")){
-                    viewModel.deleteIngredients(c);
-                }
-
+                int sNum = Integer.valueOf(number.getText().toString());
+                CIngredient c = new CIngredient(txt,sNum);
+                viewModel.insertIngredient(c);
             }
         });
-        viewModel.getList().observe(this, list1 ->{
+        viewModel.getList().observe(this,list1 ->{
             multi.setText("");
             for(CIngredient cIngredient: list1){
                 multi.append(cIngredient.name + " " + cIngredient.num + "\n");
             }
+
         });
     }
 }
