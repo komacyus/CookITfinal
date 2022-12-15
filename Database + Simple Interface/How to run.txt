@@ -1,4 +1,17 @@
-Android Manifest'e aktiviteleri eklemeyi unutmayın.
-xml dosyaları gui ile alakalı.
-db implementation dosyası komple aynı klasörde zaten
+Android Manifest'e aktiviteleri (activity extend eden classlar) eklemeyi unutmayın.
+xml dosyaları gui ile alakalı, layout dosyasına eklenmeli.
+db implementation dosyası komple aynı klasörde, main olan yerde.
+
 build gradle dependencies kısmına room runtime, room compiler ve lifecycle import edin
+
+import statements:
+
+implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+implementation 'androidx.room:room-runtime:2.4.3'
+annotationProcessor 'androidx.room:room-compiler:2.4.3'
+
+manifeste aktivite ekleniş şekli:
+
+<activity android:name = ".MainActivity"/> ya da 
+<activity android:name = ".MainActivity"><activity/>
+
