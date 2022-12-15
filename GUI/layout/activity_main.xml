@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="422dp"
+        android:layout_height="724dp"
+        android:background="@color/sapphire"
+        android:orientation="vertical"
+        android:outlineSpotShadowColor="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-16dp">
+
+        <TextView
+            android:id="@+id/textView_title"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+
+            android:background="@color/white"
+            android:gravity="center"
+            android:padding="8dp"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="Cook It"
+            android:textColor="@color/black"
+            android:textSize="70sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/recipe_button"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="@color/vivid"
+
+            android:contentDescription="recipes_button"/>
+
+        <TextView
+            android:id="@+id/sugestme_text"
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="suggest me a recipe"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <ImageButton
+            android:id="@+id/favorites_button"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:contentDescription="favorites_button"
+
+            android:background="@color/tacao"
+            app:srcCompat="@drawable/ic_baseline_star_24" />
+
+        <TextView
+            android:id="@+id/favorites_text"
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:background="@color/white"
+            android:text="favorites"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <ImageButton
+            android:id="@+id/search_button"
+            android:layout_width="match_parent"
+            android:layout_height="92dp"
+            android:background="@color/mediumpurple"
+            app:srcCompat="@drawable/ic_baseline_search_24"
+            android:contentDescription="search_button"/>
+
+        <TextView
+            android:id="@+id/searchrecipe_text"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="search recipe"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <ImageButton
+            android:id="@+id/ingredient_list_button"
+            android:layout_width="match_parent"
+            android:layout_height="99dp"
+            android:background="@color/viking"
+            app:srcCompat="@drawable/ic_baseline_checklist_rtl_24"
+            android:contentDescription="currentingredients_button" />
+
+        <TextView
+            android:id="@+id/managecurrentingredients_text"
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="manage current ingredients"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
