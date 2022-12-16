@@ -1,4 +1,4 @@
-package com.example.mycookit.Classes;
+
 
 
 
@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 public class Program {
 
-    public static Ingredient[] ingredientTypes;
+    public static Ingredient[] ingredientTypes = new Ingredient[18];
     public static ArrayList<IngredientInRecipe> currIngredients;
     public static ArrayList<Recipe> cookableWithCurrents;
     public static ArrayList<Recipe> getCookableWithExtras;
@@ -18,8 +18,13 @@ public class Program {
     public static Recipe[] lunchRecipes;
     public static Recipe[] dinnerRecipes;
 
+    public Program(){
+        fillIngredientTypesList(this.ingredientTypes);
+    }
 
-    public static void fillIngredientTypesList(Ingredient[] ingredients){
+
+    public void fillIngredientTypesList(Ingredient[] ingredients){
+
         ingredients[0] = new Ingredient("Onion",10, 5, "https://getir.com/en/product/onions-yTzj4LRUG0/");
         ingredients[1] = new Ingredient("Garlic", 0, 0, "https://getir.com/en/product/garlic-iMUipaQ3du/");
         ingredients[2] = new Ingredient("Tomato", 10, 8, "https://getir.com/en/product/tomatoes-V20EjsVe9f/");
