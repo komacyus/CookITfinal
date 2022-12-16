@@ -1,4 +1,4 @@
-
+package com.example.asdf;
 
 public class Ingredient {
     private String name;
