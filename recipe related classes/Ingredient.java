@@ -1,4 +1,4 @@
-package com.example.mycookit.Classes;
+
 
 public class Ingredient {
     private String name;
@@ -65,11 +65,11 @@ public class Ingredient {
         return inputType;
     }
 
-    public void setUrl(int url) {
+    public void setUrl(String url) {
         this.url = url;
     }
 
-    public int getUrl() {
+    public String getUrl() {
         return url;
     }
 
