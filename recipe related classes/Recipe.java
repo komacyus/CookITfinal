@@ -1,8 +1,12 @@
-package com.example.mycookit;
+package com.example.mycookit.Classes;
 
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.StringTokenizer;
+import com.example.mycookit.Classes.Program;
+
 
 public class Recipe {
 
@@ -15,7 +19,7 @@ public class Recipe {
     private String mealType;
     private ArrayList<String> stepsList;
 
-    public Recipe(File file){
+    public Recipe(File file) throws FileNotFoundException {
         Scanner sc = new Scanner(file);
         String line;
         StringTokenizer str;
@@ -26,7 +30,7 @@ public class Recipe {
         int indexOfIngredient = -1;
         while(sc.hasNextLine()){
             line = sc.nextLine();
-            if(line.charAt(0) == "*"){
+            if(line.charAt(0) == '*'){
                 str = new StringTokenizer(line.substring(1), " ");
                 amount= Double.parseDouble(str.nextToken());
                 inputType = str.nextToken();
@@ -41,22 +45,22 @@ public class Recipe {
                 else if(inputType.equalsIgnoreCase("volume")){
                     inputTypeInt = 2;
                 }
-                else if(inputType.equalsIgnoreCase("glass")){
+                else {
                     inputTypeInt = 3;
                 }
                 
-                for (int i = 0; i < ingredientTypes.length; i++){
-                    if (ingredientTypes[i].name == name){
+                for (int i = 0; i < Program.ingredientTypes.length; i++){
+                    if (Program.ingredientTypes[i].getName() == name){
                         indexOfIngredient = i;
                     }
                 }
 
-                ingredient = ingredientTypes[indexOfIngredient];
+                ingredient = Program.ingredientTypes[indexOfIngredient];
                 
-                ingsInRecipe.add(new IngredientInRecipe(ingredient, amount, inputTypeInt));
+                ingsInRecipe.add(new IngredientInRecipe(ingredient, amount));
                 
             }
-            if(line.charAt(0) == "-"){
+            if(line.charAt(0) == '-'){
                 stepsList.add(line.substring(1));
             }
         }

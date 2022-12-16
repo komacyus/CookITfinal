@@ -1,4 +1,4 @@
-package com.example.mycookit;
+package com.example.mycookit.Classes;
 
 import java.util.function.DoubleBinaryOperator;
 

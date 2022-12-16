@@ -1,4 +1,4 @@
-package com.example.mycookit;
+package com.example.mycookit.Classes;
 /**
  * implementation 'org.jsoup:jsoup:1.15.3'
  * JSoup has to be implemented to build.gradle for this class to work properly

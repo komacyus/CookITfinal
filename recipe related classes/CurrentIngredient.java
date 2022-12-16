@@ -1,6 +1,6 @@
-package main.java.com.example.mycookit;
+package com.example.mycookit.Classes;
 
-public class CurrentIngredient extends Ingredient{
+public class CurrentIngredient {
 
     private Ingredient ingredient;
     private double amount;
