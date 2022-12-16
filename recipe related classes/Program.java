@@ -14,11 +14,16 @@ public class Program {
     public Recipe[] dinnerRecipes;
 
 
-    /**
-     * @author idil
-     */
-    public void fillIngredientTypesList(){
-
+    public static void fillIngredientTypesList(String filename, Ingredient[] ingredients) throws FileNotFoundException {
+        File file = new File(filename);
+        Scanner scan = new Scanner(file);
+        int count = 0;
+        while (scan.hasNextLine()) {
+            Ingredient i = new Ingredient(scan.next(), scan.nextInt(), scan.nextInt());
+            ingredients[count] = i;
+            count++;
+        }
+        scan.close();
     }
 
     public void fillAllRecipes(){
