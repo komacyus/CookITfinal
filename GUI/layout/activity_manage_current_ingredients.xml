@@ -38,7 +38,7 @@
         android:orientation="horizontal"
         android:gravity="center"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="50dp">
         <TextView
             android:id="@+id/textView_ingredients"
             android:text="Ingredients"
@@ -56,7 +56,7 @@
             android:layout_width="131dp"
             android:layout_height="match_parent"
             android:text="Edit"
-            android:textSize="20sp" />
+            android:textSize="25sp" />
     </LinearLayout>
 
     <ScrollView
@@ -72,170 +72,6 @@
             android:columnCount="2"
             android:rowCount="15">
 
-            <LinearLayout
-                android:id="@+id/ingPage_apple"
-                android:layout_gravity="fill"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                android:layout_width="190dp"
-                android:layout_height="250dp"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:id="@+id/apple"
-                    android:layout_width="173dp"
-                    android:layout_height="142dp"
-                    android:src="@drawable/apple"
-                    android:contentDescription="TODO" />
-                <TextView
-                    android:layout_width="173dp"
-                    android:layout_height="50dp"
-                    android:text="Apple"
-                    android:gravity="center"
-                    android:textSize="20sp"
-                    android:textStyle="bold"/>
-
-                <EditText
-                    android:id="@+id/inventoryEditText_apple"
-                    android:layout_width="173dp"
-                    android:layout_height="55dp"
-                    android:enabled="false"
-                    android:gravity="center"
-                    android:text="00000"
-                    android:textSize="30sp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/ingPage_bakingpowder"
-                android:layout_width="159dp"
-                android:layout_height="250dp"
-                android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
-                android:layout_gravity="fill"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:id="@+id/bakingpowder"
-                    android:layout_width="173dp"
-                    android:layout_height="142dp"
-                    android:contentDescription="TODO"
-                    android:src="@drawable/bakingpowder" />
-
-                <TextView
-                    android:layout_width="173dp"
-                    android:layout_height="50dp"
-                    android:gravity="center"
-                    android:text="Baking powder"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-
-                <EditText
-                    android:id="@+id/inventoryEditText_bakingpowder"
-                    android:layout_width="173dp"
-                    android:layout_height="55dp"
-                    android:enabled="false"
-                    android:gravity="center"
-                    android:text="00000"
-                    android:textSize="30sp" />
-            </LinearLayout>
-            <LinearLayout
-                android:id="@+id/ingPage_banana"
-                android:layout_gravity="fill"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                android:layout_width="190dp"
-                android:layout_height="250dp"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:id="@+id/banana"
-                    android:layout_width="173dp"
-                    android:layout_height="142dp"
-                    android:src="@drawable/banana"
-                    android:contentDescription="TODO" />
-                <TextView
-                    android:layout_width="173dp"
-                    android:layout_height="50dp"
-                    android:text="Banana"
-                    android:gravity="center"
-                    android:textSize="20sp"
-                    android:textStyle="bold"/>
-
-                <EditText
-                    android:id="@+id/inventoryEditText_banana"
-                    android:layout_width="173dp"
-                    android:layout_height="55dp"
-                    android:enabled="false"
-                    android:gravity="center"
-                    android:text="00000"
-                    android:textSize="30sp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/ingPage_bread"
-                android:layout_width="159dp"
-                android:layout_height="250dp"
-                android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
-                android:layout_gravity="fill"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:id="@+id/bread"
-                    android:layout_width="173dp"
-                    android:layout_height="142dp"
-                    android:contentDescription="TODO"
-                    android:src="@drawable/bread" />
-
-                <TextView
-                    android:layout_width="173dp"
-                    android:layout_height="50dp"
-                    android:gravity="center"
-                    android:text="Bread"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-
-                <EditText
-                    android:id="@+id/inventoryEditText_bread"
-                    android:layout_width="173dp"
-                    android:layout_height="55dp"
-                    android:enabled="false"
-                    android:gravity="center"
-                    android:text="00000"
-                    android:textSize="30sp" />
-            </LinearLayout>
-            <LinearLayout
-                android:id="@+id/ingPage_brocoli"
-                android:layout_gravity="fill"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                android:layout_width="190dp"
-                android:layout_height="250dp"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:id="@+id/brocoli"
-                    android:layout_width="173dp"
-                    android:layout_height="142dp"
-                    android:src="@drawable/brocoli"
-                    android:contentDescription="TODO" />
-                <TextView
-                    android:layout_width="173dp"
-                    android:layout_height="50dp"
-                    android:text="Brocoli"
-                    android:gravity="center"
-                    android:textSize="20sp"
-                    android:textStyle="bold"/>
-
-                <EditText
-                    android:id="@+id/inventoryEditText_brocoli"
-                    android:layout_width="173dp"
-                    android:layout_height="55dp"
-                    android:enabled="false"
-                    android:gravity="center"
-                    android:text="00000"
-                    android:textSize="30sp" />
-            </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/ingPage_butter"
@@ -257,9 +93,10 @@
                     android:layout_width="173dp"
                     android:layout_height="50dp"
                     android:gravity="center"
-                    android:text="Bread"
+                    android:text="Butter (kilo)"
                     android:textSize="20sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    />
 
                 <EditText
                     android:id="@+id/inventoryEditText_butter"
@@ -267,7 +104,7 @@
                     android:layout_height="55dp"
                     android:enabled="false"
                     android:gravity="center"
-                    android:text="00000"
+                    android:text="0"
                     android:textSize="30sp" />
             </LinearLayout>
             <LinearLayout
@@ -288,7 +125,7 @@
                 <TextView
                     android:layout_width="173dp"
                     android:layout_height="50dp"
-                    android:text="Carrot"
+                    android:text="Carrot (kilo)"
                     android:gravity="center"
                     android:textSize="20sp"
                     android:textStyle="bold"/>
@@ -299,73 +136,7 @@
                     android:layout_height="55dp"
                     android:enabled="false"
                     android:gravity="center"
-                    android:text="00000"
-                    android:textSize="30sp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/ingPage_cauliflower"
-                android:layout_width="159dp"
-                android:layout_height="250dp"
-                android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
-                android:layout_gravity="fill"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:id="@+id/cauliflower"
-                    android:layout_width="173dp"
-                    android:layout_height="142dp"
-                    android:contentDescription="TODO"
-                    android:src="@drawable/cauliflower" />
-
-                <TextView
-                    android:layout_width="173dp"
-                    android:layout_height="50dp"
-                    android:gravity="center"
-                    android:text="Cauliflower"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-
-                <EditText
-                    android:id="@+id/inventoryEditText_cauliflower"
-                    android:layout_width="173dp"
-                    android:layout_height="55dp"
-                    android:enabled="false"
-                    android:gravity="center"
-                    android:text="00000"
-                    android:textSize="30sp" />
-            </LinearLayout>
-            <LinearLayout
-                android:id="@+id/ingPage_cheese"
-                android:layout_gravity="fill"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                android:layout_width="190dp"
-                android:layout_height="250dp"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:id="@+id/cheese"
-                    android:layout_width="173dp"
-                    android:layout_height="142dp"
-                    android:src="@drawable/cheese"
-                    android:contentDescription="TODO" />
-                <TextView
-                    android:layout_width="173dp"
-                    android:layout_height="50dp"
-                    android:text="Cheese"
-                    android:gravity="center"
-                    android:textSize="20sp"
-                    android:textStyle="bold"/>
-
-                <EditText
-                    android:id="@+id/inventoryEditText_cheese"
-                    android:layout_width="173dp"
-                    android:layout_height="55dp"
-                    android:enabled="false"
-                    android:gravity="center"
-                    android:text="00000"
+                    android:text="0"
                     android:textSize="30sp" />
             </LinearLayout>
 
@@ -389,7 +160,7 @@
                     android:layout_width="173dp"
                     android:layout_height="50dp"
                     android:gravity="center"
-                    android:text="Chicken"
+                    android:text="Chicken (kilo)"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -399,7 +170,7 @@
                     android:layout_height="55dp"
                     android:enabled="false"
                     android:gravity="center"
-                    android:text="00000"
+                    android:text="0"
                     android:textSize="30sp" />
             </LinearLayout>
             <LinearLayout
@@ -420,7 +191,7 @@
                 <TextView
                     android:layout_width="173dp"
                     android:layout_height="50dp"
-                    android:text="Cucumber"
+                    android:text="Cucumber (kilo)"
                     android:gravity="center"
                     android:textSize="20sp"
                     android:textStyle="bold"/>
@@ -431,7 +202,7 @@
                     android:layout_height="55dp"
                     android:enabled="false"
                     android:gravity="center"
-                    android:text="00000"
+                    android:text="0"
                     android:textSize="30sp" />
             </LinearLayout>
 
@@ -455,7 +226,7 @@
                     android:layout_width="173dp"
                     android:layout_height="50dp"
                     android:gravity="center"
-                    android:text="Egg"
+                    android:text="Egg (unit)"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -465,7 +236,106 @@
                     android:layout_height="55dp"
                     android:enabled="false"
                     android:gravity="center"
-                    android:text="00000"
+                    android:text="0"
+                    android:textSize="30sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ingPage_eggplant"
+                android:layout_width="159dp"
+                android:layout_height="250dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/eggplant"
+                    android:layout_width="173dp"
+                    android:layout_height="142dp"
+                    android:contentDescription="TODO"
+                    android:src="@drawable/eggplant" />
+
+                <TextView
+                    android:layout_width="173dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:text="Eggplant (kilo)"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/inventoryEditText_eggplant"
+                    android:layout_width="173dp"
+                    android:layout_height="55dp"
+                    android:enabled="false"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textSize="30sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ingPage_flour"
+                android:layout_width="159dp"
+                android:layout_height="250dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/flour"
+                    android:layout_width="173dp"
+                    android:layout_height="142dp"
+                    android:contentDescription="TODO"
+                    android:src="@drawable/flour" />
+
+                <TextView
+                    android:layout_width="173dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:text="Flour (kilo)"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/inventoryEditText_flour"
+                    android:layout_width="173dp"
+                    android:layout_height="55dp"
+                    android:enabled="false"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textSize="30sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ingPage_garlic"
+                android:layout_width="159dp"
+                android:layout_height="250dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/garlic"
+                    android:layout_width="173dp"
+                    android:layout_height="142dp"
+                    android:contentDescription="TODO"
+                    android:src="@drawable/garlic" />
+
+                <TextView
+                    android:layout_width="173dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:text="Garlic (unit)"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/inventoryEditText_garlic"
+                    android:layout_width="173dp"
+                    android:layout_height="55dp"
+                    android:enabled="false"
+                    android:gravity="center"
+                    android:text="0"
                     android:textSize="30sp" />
             </LinearLayout>
             <LinearLayout
@@ -486,7 +356,7 @@
                 <TextView
                     android:layout_width="173dp"
                     android:layout_height="50dp"
-                    android:text="lemon"
+                    android:text="lemon (unit)"
                     android:gravity="center"
                     android:textSize="20sp"
                     android:textStyle="bold"/>
@@ -497,43 +367,10 @@
                     android:layout_height="55dp"
                     android:enabled="false"
                     android:gravity="center"
-                    android:text="00000"
+                    android:text="0"
                     android:textSize="30sp" />
             </LinearLayout>
 
-            <LinearLayout
-                android:id="@+id/ingPage_lettuce"
-                android:layout_width="159dp"
-                android:layout_height="250dp"
-                android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
-                android:layout_gravity="fill"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:id="@+id/lettuce"
-                    android:layout_width="173dp"
-                    android:layout_height="142dp"
-                    android:contentDescription="TODO"
-                    android:src="@drawable/lettuce" />
-
-                <TextView
-                    android:layout_width="173dp"
-                    android:layout_height="50dp"
-                    android:gravity="center"
-                    android:text="Lettuce"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-
-                <EditText
-                    android:id="@+id/inventoryEditText_lettuce"
-                    android:layout_width="173dp"
-                    android:layout_height="55dp"
-                    android:enabled="false"
-                    android:gravity="center"
-                    android:text="00000"
-                    android:textSize="30sp" />
-            </LinearLayout>
             <LinearLayout
                 android:id="@+id/ingPage_meat"
                 android:layout_gravity="fill"
@@ -552,7 +389,7 @@
                 <TextView
                     android:layout_width="173dp"
                     android:layout_height="50dp"
-                    android:text="Meat"
+                    android:text="Meat (kilo)"
                     android:gravity="center"
                     android:textSize="20sp"
                     android:textStyle="bold"/>
@@ -563,7 +400,7 @@
                     android:layout_height="55dp"
                     android:enabled="false"
                     android:gravity="center"
-                    android:text="00000"
+                    android:text="0"
                     android:textSize="30sp" />
             </LinearLayout>
 
@@ -587,7 +424,7 @@
                     android:layout_width="173dp"
                     android:layout_height="50dp"
                     android:gravity="center"
-                    android:text="Milk"
+                    android:text="Milk (volume)"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -597,39 +434,7 @@
                     android:layout_height="55dp"
                     android:enabled="false"
                     android:gravity="center"
-                    android:text="00000"
-                    android:textSize="30sp" />
-            </LinearLayout>
-            <LinearLayout
-                android:id="@+id/ingPage_mint"
-                android:layout_gravity="fill"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                android:layout_width="190dp"
-                android:layout_height="250dp"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:id="@+id/mint"
-                    android:layout_width="173dp"
-                    android:layout_height="142dp"
-                    android:src="@drawable/mint"
-                    android:contentDescription="TODO" />
-                <TextView
-                    android:layout_width="173dp"
-                    android:layout_height="50dp"
-                    android:text="Mint"
-                    android:gravity="center"
-                    android:textSize="20sp"
-                    android:textStyle="bold"/>
-
-                <EditText
-                    android:id="@+id/inventoryEditText_mint"
-                    android:layout_width="173dp"
-                    android:layout_height="55dp"
-                    android:enabled="false"
-                    android:gravity="center"
-                    android:text="00000"
+                    android:text="0"
                     android:textSize="30sp" />
             </LinearLayout>
 
@@ -653,7 +458,7 @@
                     android:layout_width="173dp"
                     android:layout_height="50dp"
                     android:gravity="center"
-                    android:text="Mushroom"
+                    android:text="Mushroom (kilo)"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -663,7 +468,7 @@
                     android:layout_height="55dp"
                     android:enabled="false"
                     android:gravity="center"
-                    android:text="00000"
+                    android:text="0"
                     android:textSize="30sp" />
             </LinearLayout>
             <LinearLayout
@@ -684,7 +489,7 @@
                 <TextView
                     android:layout_width="173dp"
                     android:layout_height="50dp"
-                    android:text="Olive oil"
+                    android:text="Olive oil (volume)"
                     android:gravity="center"
                     android:textSize="20sp"
                     android:textStyle="bold"/>
@@ -695,7 +500,7 @@
                     android:layout_height="55dp"
                     android:enabled="false"
                     android:gravity="center"
-                    android:text="00000"
+                    android:text="0"
                     android:textSize="30sp" />
             </LinearLayout>
 
@@ -719,7 +524,7 @@
                     android:layout_width="173dp"
                     android:layout_height="50dp"
                     android:gravity="center"
-                    android:text="Onion"
+                    android:text="Onion (kilo)"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -729,44 +534,12 @@
                     android:layout_height="55dp"
                     android:enabled="false"
                     android:gravity="center"
-                    android:text="00000"
-                    android:textSize="30sp" />
-            </LinearLayout>
-            <LinearLayout
-                android:id="@+id/ingPage_orange"
-                android:layout_gravity="fill"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                android:layout_width="190dp"
-                android:layout_height="250dp"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:id="@+id/orange"
-                    android:layout_width="173dp"
-                    android:layout_height="142dp"
-                    android:src="@drawable/orange"
-                    android:contentDescription="TODO" />
-                <TextView
-                    android:layout_width="173dp"
-                    android:layout_height="50dp"
-                    android:text="Orange"
-                    android:gravity="center"
-                    android:textSize="20sp"
-                    android:textStyle="bold"/>
-
-                <EditText
-                    android:id="@+id/inventoryEditText_orange"
-                    android:layout_width="173dp"
-                    android:layout_height="55dp"
-                    android:enabled="false"
-                    android:gravity="center"
-                    android:text="00000"
+                    android:text="0"
                     android:textSize="30sp" />
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/ingPage_parmesan"
+                android:id="@+id/ingPage_spagetti"
                 android:layout_width="159dp"
                 android:layout_height="250dp"
                 android:layout_rowWeight="1"
@@ -775,93 +548,27 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:id="@+id/parmesan"
+                    android:id="@+id/spagetti"
                     android:layout_width="173dp"
                     android:layout_height="142dp"
                     android:contentDescription="TODO"
-                    android:src="@drawable/parmesan" />
+                    android:src="@drawable/spagetti" />
 
                 <TextView
                     android:layout_width="173dp"
                     android:layout_height="50dp"
                     android:gravity="center"
-                    android:text="Parmesan"
+                    android:text="Spagetti (unit)"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
                 <EditText
-                    android:id="@+id/inventoryEditText_parmesan"
+                    android:id="@+id/inventoryEditText_spagetti"
                     android:layout_width="173dp"
                     android:layout_height="55dp"
                     android:enabled="false"
                     android:gravity="center"
-                    android:text="00000"
-                    android:textSize="30sp" />
-            </LinearLayout>
-            <LinearLayout
-                android:id="@+id/ingPage_parsley"
-                android:layout_gravity="fill"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                android:layout_width="190dp"
-                android:layout_height="250dp"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:id="@+id/parsley"
-                    android:layout_width="173dp"
-                    android:layout_height="142dp"
-                    android:src="@drawable/parsley"
-                    android:contentDescription="TODO" />
-                <TextView
-                    android:layout_width="173dp"
-                    android:layout_height="50dp"
-                    android:text="Parsley"
-                    android:gravity="center"
-                    android:textSize="20sp"
-                    android:textStyle="bold"/>
-
-                <EditText
-                    android:id="@+id/inventoryEditText_parsley"
-                    android:layout_width="173dp"
-                    android:layout_height="55dp"
-                    android:enabled="false"
-                    android:gravity="center"
-                    android:text="00000"
-                    android:textSize="30sp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/ingPage_pasta"
-                android:layout_width="159dp"
-                android:layout_height="250dp"
-                android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
-                android:layout_gravity="fill"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:id="@+id/pasta"
-                    android:layout_width="173dp"
-                    android:layout_height="142dp"
-                    android:contentDescription="TODO"
-                    android:src="@drawable/pasta" />
-
-                <TextView
-                    android:layout_width="173dp"
-                    android:layout_height="50dp"
-                    android:gravity="center"
-                    android:text="Pasta"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-
-                <EditText
-                    android:id="@+id/inventoryEditText_pasta"
-                    android:layout_width="173dp"
-                    android:layout_height="55dp"
-                    android:enabled="false"
-                    android:gravity="center"
-                    android:text="00000"
+                    android:text="0"
                     android:textSize="30sp" />
             </LinearLayout>
             <LinearLayout
@@ -882,7 +589,7 @@
                 <TextView
                     android:layout_width="173dp"
                     android:layout_height="50dp"
-                    android:text="Potato"
+                    android:text="Potato (kilo)"
                     android:gravity="center"
                     android:textSize="20sp"
                     android:textStyle="bold"/>
@@ -893,7 +600,7 @@
                     android:layout_height="55dp"
                     android:enabled="false"
                     android:gravity="center"
-                    android:text="00000"
+                    android:text="0"
                     android:textSize="30sp" />
             </LinearLayout>
 
@@ -917,7 +624,7 @@
                     android:layout_width="173dp"
                     android:layout_height="50dp"
                     android:gravity="center"
-                    android:text="Rice"
+                    android:text="Rice (kilo)"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -927,41 +634,10 @@
                     android:layout_height="55dp"
                     android:enabled="false"
                     android:gravity="center"
-                    android:text="00000"
+                    android:text="0"
                     android:textSize="30sp" />
             </LinearLayout>
-            <LinearLayout
-                android:id="@+id/ingPage_sugar"
-                android:layout_gravity="fill"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                android:layout_width="190dp"
-                android:layout_height="250dp"
-                android:orientation="vertical">
 
-                <ImageView
-                    android:id="@+id/sugar"
-                    android:layout_width="173dp"
-                    android:layout_height="142dp"
-                    android:src="@drawable/sugar"
-                    android:contentDescription="TODO" />
-                <TextView
-                    android:layout_width="173dp"
-                    android:layout_height="50dp"
-                    android:text="Sugar"
-                    android:gravity="center"
-                    android:textSize="20sp"
-                    android:textStyle="bold"/>
-
-                <EditText
-                    android:id="@+id/inventoryEditText_sugar"
-                    android:layout_width="173dp"
-                    android:layout_height="55dp"
-                    android:enabled="false"
-                    android:gravity="center"
-                    android:text="00000"
-                    android:textSize="30sp" />
-            </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/ingPage_tomato"
@@ -983,7 +659,7 @@
                     android:layout_width="173dp"
                     android:layout_height="50dp"
                     android:gravity="center"
-                    android:text="Tomato"
+                    android:text="Tomatoes (kilo)"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -993,83 +669,9 @@
                     android:layout_height="55dp"
                     android:enabled="false"
                     android:gravity="center"
-                    android:text="00000"
+                    android:text="0"
                     android:textSize="30sp" />
             </LinearLayout>
-            <LinearLayout
-                android:id="@+id/ingPage_vanilla"
-                android:layout_gravity="fill"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                android:layout_width="190dp"
-                android:layout_height="250dp"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:id="@+id/vanilla"
-                    android:layout_width="173dp"
-                    android:layout_height="142dp"
-                    android:src="@drawable/vanilla"
-                    android:contentDescription="TODO" />
-                <TextView
-                    android:layout_width="173dp"
-                    android:layout_height="50dp"
-                    android:text="Vanilla"
-                    android:gravity="center"
-                    android:textSize="20sp"
-                    android:textStyle="bold"/>
-
-                <EditText
-                    android:id="@+id/inventoryEditText_vanilla"
-                    android:layout_width="173dp"
-                    android:layout_height="55dp"
-                    android:enabled="false"
-                    android:gravity="center"
-                    android:text="00000"
-                    android:textSize="30sp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/ingPage_zucchini"
-                android:layout_width="159dp"
-                android:layout_height="250dp"
-                android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
-                android:layout_gravity="fill"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:id="@+id/zucchini"
-                    android:layout_width="173dp"
-                    android:layout_height="142dp"
-                    android:contentDescription="TODO"
-                    android:src="@drawable/zucchini" />
-
-                <TextView
-                    android:layout_width="173dp"
-                    android:layout_height="50dp"
-                    android:gravity="center"
-                    android:text="Zucchini"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-
-                <EditText
-                    android:id="@+id/inventoryEditText_zucchini"
-                    android:layout_width="173dp"
-                    android:layout_height="55dp"
-                    android:enabled="false"
-                    android:gravity="center"
-                    android:text="00000"
-                    android:textSize="30sp" />
-            </LinearLayout>
-
-
-
-
-
-
-
-
 
 
 
