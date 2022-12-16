@@ -1,4 +1,4 @@
-package com.example.asdf;
+package com.example.mycookit;
 
 
 
@@ -19,12 +19,13 @@ public class Program {
     public static Recipe[] dinnerRecipes;
 
     public Program(){
-        ingredientTypes = new Ingredient[18];
+        ingredientTypes = new Ingredient[22];
         breakfastRecipes = new Recipe[2];
         lunchRecipes = new Recipe[2];
         dinnerRecipes = new Recipe[2];
         allRecipes = new Recipe[6];
         fillIngredientTypesList(this.ingredientTypes);
+        fillAllRecipes();
     }
 
 
@@ -52,12 +53,13 @@ public class Program {
         ingredients[19] = new Ingredient("Red_Pepper", 10,10,"https://getir.com/urun/kapya-biber-PkY92uC96K/" );
         ingredients[20] = new Ingredient("Red_Lentil", 1,0, "https://getir.com/urun/raya-organik-kirmizi-mercimek-i3zc9wdneD/");
         ingredients[21] = new Ingredient("Tomato_Paste", 41, 30, "https://getir.com/en/more/product/tat-pratik-domates-puresi-WImfLiucBT/" );
-        
+
 
 
     }
 
     public void fillAllRecipes(){
+
         breakfastRecipes[0] = new Recipe("Egg Salad",
         "*3 unit egg",
         "*4 spoon olive_oil",
@@ -107,10 +109,8 @@ public class Program {
         "-Dish out, garnish with some parsley and serve immediately.");
         dinnerRecipes[0] = new Recipe("Meatballs",
 
-        "*0.8 gram meat",
+        "*0.8 kg meat",
         "*2 unit onion",
-        "*1 spoon black_pepper",
-        "*0.25 glass water",
         
         "-In a large bowl, combine ground beef, breadcrumbs, finely diced onion.",
         "-Add in the spices.",
@@ -128,12 +128,14 @@ public class Program {
         "*1 unit green_pepper",
         "*1 unit onion",
         "*5 spoon olive_oil",
-        "*0.5 glass water",
+
         
         "-Put the olive oil to the saucepan and then add the cubed cut chicken breasts.Saute them at medium heat about 3 minutes. Add sliced onions and continue to saute all until onions get softy. ",
         "-Add the julienne cut peppers and saute them about 7 minutes until peppers get softy.",
         "-Add the soy sauce and continue to stir all about 2-3 minutes. Then add the 1/2 cup of water and close the saucepan lid and let it cook 20 minutes at low-medium heat.",
         "-Serve");
+
+
     }
 
 
@@ -159,10 +161,8 @@ public class Program {
             if(name.equalsIgnoreCase(ingredientTypes[i].getName())){
                 return i;
             }
-            else{
-                return -1;
-            }
         }
+        return -1;
     }
 
 }

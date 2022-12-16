@@ -1,4 +1,4 @@
-package com.example.asdf;
+package com.example.mycookit;
 
 public class Ingredient {
     private String name;

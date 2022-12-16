@@ -1,4 +1,4 @@
-package com.example.mycookit.Classes;
+package com.example.mycookit;
 
 public class CurrentIngredient {
 

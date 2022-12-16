@@ -1,4 +1,4 @@
-package com.example.asdf;
+package com.example.mycookit;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -11,23 +11,26 @@ import java.util.StringTokenizer;
 public class Recipe {
 
     private String name;
-    private ArrayList<IngredientInRecipe> ingsInRecipe;
+    private ArrayList<IngredientInRecipe> ingsInRecipe = new ArrayList<IngredientInRecipe>();
 
     private boolean isFavorite;
     private boolean isCookableWithCurrent;
     private boolean isCookableWithExtra;
     private String mealType;
-    private ArrayList<String> stepsList;
+    private ArrayList<String> stepsList = new ArrayList<String>();
     private double amount;
     private String nameOfIng, input;
     private String inputType = "";
 
+
     public Recipe(String name, String... str){
+
         this.name = name;
         StringTokenizer stringTokenizer;
-        for (String st : str){
-            if(st.charAt(0) == '*'){
-                stringTokenizer = new StringTokenizer(st.substring(1), " ");
+
+        for (int i = 0; i< str.length ;i++){
+            if(str[i].charAt(0) == '*'){
+                stringTokenizer = new StringTokenizer(str[i].substring(1), " ");
                 amount = Double.parseDouble(stringTokenizer.nextToken());
                 input = stringTokenizer.nextToken();
                 nameOfIng = stringTokenizer.nextToken();
@@ -37,13 +40,17 @@ public class Recipe {
                 if(input.equalsIgnoreCase("volume")) inputType += '2';
                 if(input.equalsIgnoreCase("kg")) inputType += '1';
                 if(input.equalsIgnoreCase("unit")) inputType += '0';    
-                
-                ingsInRecipe.add(new IngredientInRecipe(Program.ingredientTypes[Program.findIndexOnIngTypeList(nameOfIng)], amount, Integer.parseInt(inputType)));
+
+                Ingredient ing = Program.ingredientTypes[Program.findIndexOnIngTypeList(nameOfIng)];
+
+                IngredientInRecipe inginrec = new IngredientInRecipe(ing,amount, Integer.parseInt(inputType));
+
+                ingsInRecipe.add(inginrec);
                 
                 
             }
-            else if(st.charAt(0) == '-'){
-                this.stepsList.add(st.substring(1));
+            else if(str[i].charAt(0) == '-'){
+                this.stepsList.add(str[i].substring(1));
             }
         }
     }
