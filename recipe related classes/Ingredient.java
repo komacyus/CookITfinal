@@ -1,4 +1,4 @@
-package com.example.mycookit;
+package com.example.mycookit.Classes;
 
 public class Ingredient {
     private String name;
@@ -34,6 +34,16 @@ public class Ingredient {
     public int getAsUnit() {
 
     }
+    
+    public int getAsTableSpoon(){
+    
+    }
+    
+    public int getAsTeaSpoon(){
+    
+    }
+    
+    
     */
 
     public String toString() {

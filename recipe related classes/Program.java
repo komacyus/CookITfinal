@@ -1,24 +1,34 @@
-package com.example.mycookit;
+package com.example.mycookit.Classes;
 
+
+
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Program {
 
-    public Ingredient[] ingredientTypes;
-    public ArrayList<IngredientInRecipe> currIngredients;
-    public ArrayList<Recipe> cookableWithCurrents;
-    public ArrayList<Recipe> getCookableWithExtras;
-    public Recipe[] allRecipes;
-    public Recipe[] breakfastRecipes;
-    public Recipe[] lunchRecipes;
-    public Recipe[] dinnerRecipes;
+    public static Ingredient[] ingredientTypes;
+    public static ArrayList<IngredientInRecipe> currIngredients;
+    public static ArrayList<Recipe> cookableWithCurrents;
+    public static ArrayList<Recipe> getCookableWithExtras;
+    public static Recipe[] allRecipes;
+    public static Recipe[] breakfastRecipes;
+    public static Recipe[] lunchRecipes;
+    public static Recipe[] dinnerRecipes;
 
 
-    /**
-     * @author idil
-     */
-    public void fillIngredientTypesList(){
-
+    public static void fillIngredientTypesList(String filename, Ingredient[] ingredients) throws FileNotFoundException {
+        File file = new File(filename);
+        Scanner scan = new Scanner(file);
+        int count = 0;
+        while (scan.hasNextLine()) {
+            Ingredient i = new Ingredient(scan.next(), scan.nextInt(), scan.nextInt());
+            ingredients[count] = i;
+            count++;
+        }
+        scan.close();
     }
 
     public void fillAllRecipes(){

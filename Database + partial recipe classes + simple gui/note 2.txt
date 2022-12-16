@@ -1,0 +1,7 @@
+Örnek ingredientları elimle yazdım txt file okumadığı için.
+
+Elimle yazdığım için de hata vermesin diye array uzunluğunu 11 yaptım, 33 yapınca null error veriyor hepsi dolmadığı için onu eğer file okuma metodunu yazarsanız düzeltmeyi unutmayın.
+
+Logcat kısmında yazılan yere Debug yazarsanız CurrentIngredients arraylistinin boyutunu gösterir.
+
+Ve input validation yapmadım henüz, yani default ingredients arrayda yazılı olmayan şeyler de girilebilir.

@@ -1,2 +1,11 @@
 since we are implementing these project in different computers
 you have to change the package.com....... in each java classes according to your package name
+
+manifeste aktivite ekleniş şekli:
+
+<activity android:name = ".MainActivity"/> ya da 
+<activity android:name = ".MainActivity"><activity/>
+
+!! MAİN ACTİVİTY ÖRNEK OLARAK YAZILI BURADA. İÇİNDE ACTİVİTY GEÇEN HER CLASSIN MANİFESTTE 
+BELİRTİLMESİ GEREKİYOR. ACTİVİTY EKLEMEYE ÇALIŞTIĞINIZDA OTOMATİK OLARAK EKLENEBİLECEK
+ACTİVİTYLERİN İSİMLERİ ZATEN GÖSTERİLİYOR PROGRM TARAFINDAN !!
