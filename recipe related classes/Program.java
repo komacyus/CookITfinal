@@ -18,6 +18,10 @@ public class Program {
     public static Recipe[] lunchRecipes;
     public static Recipe[] dinnerRecipes;
 
+    public Program(){
+        fillIngredientTypesList(ingredientTypes);
+    }
+
 
     public static void fillIngredientTypesList(Ingredient[] ingredients){
         ingredients[0] = new Ingredient("Onion",10, 5, "https://getir.com/en/product/onions-yTzj4LRUG0/");
