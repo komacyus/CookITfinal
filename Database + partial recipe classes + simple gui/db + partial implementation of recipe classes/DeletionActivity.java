@@ -1,40 +1,46 @@
 package com.example.myapplication;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import java.util.*;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.ViewModelProvider;
 
-public class AdditionActivity extends AppCompatActivity {
-    static int row = 0;
+public class DeletionActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_addition);
+        setContentView(R.layout.activity_deletion);
         IngViewModel viewModel = new ViewModelProvider(this).get(IngViewModel.class);
-        Button addList = findViewById(R.id.button2);
+        Button delList = findViewById(R.id.button2);
         EditText edited = findViewById(R.id.editTextTextPersonName2);
         EditText multi = findViewById(R.id.editTextTextMultiLine);
         multi.setEnabled(false);
-        EditText number = findViewById(R.id.editTextNumber);
-        addList.setOnClickListener(new View.OnClickListener() {
+        delList.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String txt = edited.getText().toString();
-                int sNum = Integer.valueOf(number.getText().toString());
-                CIngredient c = new CIngredient(txt,sNum);
-                viewModel.insertIngredient(c);
+                CIngredient c = new CIngredient(txt,1);
+
+                if(!c.name.equals("")){
+                    viewModel.deleteIngredients(c);
+                }
+
             }
         });
-        viewModel.getList().observe(this,list1 ->{
+        viewModel.getList().observe(this, list1 ->{
             multi.setText("");
+            Program.currOfUser = new ArrayList<CurrentIngredient>();
             for(CIngredient cIngredient: list1){
                 multi.append(cIngredient.name + " " + cIngredient.num + "\n");
-            }
 
+                Program.currOfUser.add(Program.converter(cIngredient));
+            }
+            Log.d("Debug",Integer.toString(Program.currOfUser.size()));
         });
     }
 }

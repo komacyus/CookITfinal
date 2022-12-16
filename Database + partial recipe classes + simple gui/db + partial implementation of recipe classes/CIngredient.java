@@ -8,10 +8,10 @@ import androidx.room.Entity;
 public class CIngredient {
     @ColumnInfo(name = "name")
     @NonNull String name;
-    @ColumnInfo(name = "classification_number")
-    int num;
+    @ColumnInfo(name = "amount")
+    double num;
 
-    public CIngredient(String name, int num){
+    public CIngredient(String name, double num){
         this.name = name;
         this.num = num;
     }
@@ -19,7 +19,7 @@ public class CIngredient {
     public boolean equals(Object obj){
         if(obj instanceof CIngredient){
             CIngredient ing = (CIngredient) obj;
-            if(this.name.equalsIgnoreCase(ing.name)){
+            if(this.name.equals(ing.name)){
                 return true;
             }
             return false;
