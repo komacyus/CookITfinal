@@ -5,11 +5,14 @@ import java.util.function.DoubleBinaryOperator;
 public class IngredientInRecipe {
     private Ingredient ingredient;
     private double amount;
+    private int currentUnit;
 
-    public IngredientInRecipe(Ingredient ingredient, double amount){
+    public IngredientInRecipe(Ingredient ingredient, double amount, int currentUnit){
         this.ingredient = ingredient;
         this.amount = amount;
+        this.currentUnit = currentUnit;
     }
+
     /**
      * ingredientı tüm ingredientları tanımlamak ve kendi özelliklerini
      * tutmak için kullanıcaz

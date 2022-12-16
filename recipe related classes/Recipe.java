@@ -18,7 +18,35 @@ public class Recipe {
     private boolean isCookableWithExtra;
     private String mealType;
     private ArrayList<String> stepsList;
+    private double amount;
+    private String nameOfIng, input;
+    private String inputType = "";
 
+    public Recipe(String name, String... str){
+        this.name = name;
+        StringTokenizer stringTokenizer;
+        for (String st : str){
+            if(st.charAt(0) == '*'){
+                stringTokenizer = new StringTokenizer(st.substring(1), " ");
+                amount = Double.parseDouble(stringTokenizer.nextToken());
+                input = stringTokenizer.nextToken();
+                nameOfIng = stringTokenizer.nextToken();
+
+                if(input.equalsIgnoreCase("spoon")) inputType += '4';
+                if(input.equalsIgnoreCase("glass")) inputType += '3';
+                if(input.equalsIgnoreCase("volume")) inputType += '2';
+                if(input.equalsIgnoreCase("kg")) inputType += '1';
+                if(input.equalsIgnoreCase("unit")) inputType += '0';    
+                
+                ingsInRecipe.add(new IngredientInRecipe(Program.ingredientTypes[Program.findIndexOnIngTypeList(nameOfIng)], amount, Integer.parseInt(inputType)));
+                
+                
+            }
+            else if(st.charAt(0) == '-'){
+                this.stepsList.add(st.substring(1));
+            }
+        }
+    }
 
 
     public String getName() {
