@@ -34,6 +34,16 @@ public class Ingredient {
     public int getAsUnit() {
 
     }
+    
+    public int getAsTableSpoon(){
+    
+    }
+    
+    public int getAsTeaSpoon(){
+    
+    }
+    
+    
     */
 
     public String toString() {
