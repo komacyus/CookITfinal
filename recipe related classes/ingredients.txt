@@ -1,4 +1,4 @@
-onion		0	0	https://getir.com/en/product/onions-yTzj4LRUG0/
+onion		10	5	https://getir.com/en/product/onions-yTzj4LRUG0/
 garlic		0	0	https://getir.com/en/product/garlic-iMUipaQ3du/
 tomatoes	10	8	https://getir.com/en/product/tomatoes-V20EjsVe9f/
 carrot 		10	8	https://getir.com/en/product/carrots-JDeHsirl3B/
