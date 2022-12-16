@@ -7,15 +7,18 @@ public class Ingredient {
      * 1 for kilo
      * 2 for volume
      * 3 for glass
+     * 4 for spoon
      */
     private int inputType;
     private int conversion;
+    private String url;
     
 
-    public Ingredient(String name, int inputType, int conversion) {
+    public Ingredient(String name, int inputType, int conversion, String url) {
         this.name = name;
         this.inputType = inputType;
         this.conversion = conversion;
+        this.url = url;
     }
 
     /*
@@ -60,6 +63,14 @@ public class Ingredient {
 
     public int getInputType() {
         return inputType;
+    }
+
+    public void setUrl(int url) {
+        this.url = url;
+    }
+
+    public int getUrl() {
+        return url;
     }
 
 
