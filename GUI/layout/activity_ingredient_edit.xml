@@ -147,7 +147,7 @@
                 android:layout_height="match_parent"
                 android:enabled="true"
                 android:gravity="center"
-                android:hint="Enter amount"
+                android:hint="Enter amount (kilo)"
                 android:text=""
                 android:textSize="20sp" />
 

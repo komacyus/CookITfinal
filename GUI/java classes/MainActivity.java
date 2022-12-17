@@ -2,19 +2,23 @@ package com.a.cookit;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
-
+    ProgressDialog dialog;
     ImageButton suggestRecipe, favorites, searchRecipe, manageIngredients;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        dialog = new ProgressDialog( this);
+        dialog.setTitle("Loading...");
 
         suggestRecipe = findViewById(R.id.recipe_button);
         favorites = findViewById(R.id.favorites_button);

@@ -68,14 +68,14 @@
         <GridLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10sp"
+            android:layout_margin="5sp"
             android:columnCount="2"
-            android:rowCount="15">
+            android:rowCount="9">
 
 
             <LinearLayout
                 android:id="@+id/ingPage_butter"
-                android:layout_width="159dp"
+                android:layout_width="166dp"
                 android:layout_height="250dp"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
@@ -95,8 +95,7 @@
                     android:gravity="center"
                     android:text="Butter (kilo)"
                     android:textSize="20sp"
-                    android:textStyle="bold"
-                    />
+                    android:textStyle="bold" />
 
                 <EditText
                     android:id="@+id/inventoryEditText_butter"
@@ -112,7 +111,7 @@
                 android:layout_gravity="fill"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
-                android:layout_width="190dp"
+                android:layout_width="170dp"
                 android:layout_height="250dp"
                 android:orientation="vertical">
 
@@ -241,7 +240,7 @@
             </LinearLayout>
             <LinearLayout
                 android:id="@+id/ingPage_eggplant"
-                android:layout_width="159dp"
+                android:layout_width="140dp"
                 android:layout_height="250dp"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
@@ -260,7 +259,7 @@
                     android:layout_height="50dp"
                     android:gravity="center"
                     android:text="Eggplant (kilo)"
-                    android:textSize="20sp"
+                    android:textSize="15sp"
                     android:textStyle="bold" />
 
                 <EditText
@@ -459,7 +458,7 @@
                     android:layout_height="50dp"
                     android:gravity="center"
                     android:text="Mushroom (kilo)"
-                    android:textSize="20sp"
+                    android:textSize="15sp"
                     android:textStyle="bold" />
 
                 <EditText
@@ -491,7 +490,7 @@
                     android:layout_height="50dp"
                     android:text="Olive oil (volume)"
                     android:gravity="center"
-                    android:textSize="20sp"
+                    android:textSize="15sp"
                     android:textStyle="bold"/>
 
                 <EditText
@@ -559,7 +558,7 @@
                     android:layout_height="50dp"
                     android:gravity="center"
                     android:text="Spagetti (unit)"
-                    android:textSize="20sp"
+                    android:textSize="15sp"
                     android:textStyle="bold" />
 
                 <EditText
@@ -660,7 +659,7 @@
                     android:layout_height="50dp"
                     android:gravity="center"
                     android:text="Tomatoes (kilo)"
-                    android:textSize="20sp"
+                    android:textSize="15sp"
                     android:textStyle="bold" />
 
                 <EditText

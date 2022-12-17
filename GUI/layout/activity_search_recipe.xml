@@ -8,7 +8,7 @@
         android:layout_width="409dp"
         android:layout_height="729dp"
         android:orientation="vertical"
-        android:background="@color/vivid"
+        android:background="@color/white"
         tools:layout_editor_absoluteX="1dp"
         tools:layout_editor_absoluteY="1dp"
         tools:ignore="MissingConstraints">
@@ -22,17 +22,18 @@
             android:scrollHorizontally="true"
             android:singleLine="true"
             android:text="Recipes"
-            android:textColor="@color/sapphire"
+            android:textColor="@color/orange"
             android:textSize="70sp"
             android:textStyle="bold" />
 
         <Button
             android:id="@+id/breakfast_button"
             android:layout_width="match_parent"
-            android:background="@color/sapphire"
+
             android:textColor="@color/sapphire"
             android:layout_height="104dp"
             android:text="Breakfast"
+            android:textSize="20sp"
             />
 
         <Button
@@ -41,6 +42,7 @@
             android:textColor="@color/sapphire"
             android:layout_height="104dp"
             android:text="lunch"
+            android:textSize="20sp"
             />
 
         <Button
@@ -49,6 +51,7 @@
             android:textColor="@color/sapphire"
             android:layout_height="104dp"
             android:text="Dinner"
+            android:textSize="20sp"
             />
     </LinearLayout>
 
