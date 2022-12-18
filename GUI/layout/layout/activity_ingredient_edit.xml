@@ -72,6 +72,7 @@
                     android:layout_height="match_parent"
                     android:enabled="true"
                     android:gravity="center"
+                    android:inputType="number"
                     android:hint="Enter amount (kilo)"
                     android:text=""
                     android:textSize="20sp" />
@@ -109,6 +110,7 @@
                     android:layout_height="match_parent"
                     android:enabled="true"
                     android:gravity="center"
+                    android:inputType="number"
                     android:hint="Enter amount (kilo)"
                     android:text=""
                     android:textSize="20sp" />
@@ -147,6 +149,7 @@
                 android:layout_height="match_parent"
                 android:enabled="true"
                 android:gravity="center"
+                android:inputType="number"
                 android:hint="Enter amount (kilo)"
                 android:text=""
                 android:textSize="20sp" />
@@ -184,6 +187,7 @@
                 android:layout_height="match_parent"
                 android:enabled="true"
                 android:gravity="center"
+                android:inputType="number"
                 android:hint="Enter amount (kilo)"
                 android:text=""
                 android:textSize="20sp" />
@@ -220,6 +224,7 @@
                 android:layout_height="match_parent"
                 android:enabled="true"
                 android:gravity="center"
+                android:inputType="number"
                 android:hint="Enter amount (unit)"
                 android:text=""
                 android:textSize="20sp" />
@@ -257,6 +262,7 @@
                     android:layout_height="match_parent"
                     android:enabled="true"
                     android:gravity="center"
+                    android:inputType="number"
                     android:hint="Enter amount (kilo)"
                     android:text=""
                     android:textSize="20sp" />
@@ -292,6 +298,7 @@
                 android:layout_width="148dp"
                 android:layout_height="match_parent"
                 android:enabled="true"
+                android:inputType="number"
                 android:gravity="center"
                 android:hint="Enter amount (kilo)"
                 android:text=""
@@ -329,6 +336,7 @@
                 android:layout_height="match_parent"
                 android:enabled="true"
                 android:gravity="center"
+                android:inputType="number"
                 android:hint="Enter amount (unit)"
                 android:text=""
                 android:textSize="20sp" />
@@ -341,7 +349,46 @@
 
                 android:text="Edit" />
 
-        </LinearLayout><LinearLayout
+        </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ingEditPage_greenpepper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_gravity="fill"
+                android:background="@color/sapphire"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="135dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Green pepper"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editInventoryEditText_greenpepper"
+                    android:layout_width="148dp"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:enabled="true"
+
+                    android:gravity="center"
+                    android:hint="Enter amount (kilo)"
+                    android:text=""
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/editInventoryEditButton_greenpepper"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10sp"
+
+                    android:text="Edit" />
+
+            </LinearLayout><LinearLayout
             android:id="@+id/ingEditPage_lemon"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -364,6 +411,7 @@
                 android:layout_width="148dp"
                 android:layout_height="match_parent"
                 android:enabled="true"
+                android:inputType="number"
                 android:gravity="center"
                 android:hint="Enter amount (unit)"
                 android:text=""
@@ -401,6 +449,7 @@
                 android:layout_height="match_parent"
                 android:enabled="true"
                 android:gravity="center"
+                android:inputType="number"
                 android:hint="Enter amount (kilo)"
                 android:text=""
                 android:textSize="20sp" />
@@ -437,6 +486,7 @@
                 android:layout_height="match_parent"
                 android:enabled="true"
                 android:gravity="center"
+                android:inputType="number"
                 android:hint="Enter amount (volume)"
                 android:text=""
                 android:textSize="20sp" />
@@ -473,6 +523,7 @@
                 android:layout_height="match_parent"
                 android:enabled="true"
                 android:gravity="center"
+                android:inputType="number"
                 android:hint="Enter amount (kilo)"
                 android:text=""
                 android:textSize="20sp" />
@@ -509,6 +560,7 @@
                 android:layout_height="match_parent"
                 android:enabled="true"
                 android:gravity="center"
+                android:inputType="number"
                 android:hint="Enter amount (volume)"
                 android:text=""
                 android:textSize="20sp" />
@@ -544,6 +596,7 @@
                 android:layout_width="148dp"
                 android:layout_height="match_parent"
                 android:enabled="true"
+                android:inputType="number"
                 android:gravity="center"
                 android:hint="Enter amount (kilo)"
                 android:text=""
@@ -557,7 +610,82 @@
 
                 android:text="Edit" />
 
-        </LinearLayout>  <LinearLayout
+        </LinearLayout><LinearLayout
+            android:id="@+id/ingEditPage_redlentil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_gravity="fill"
+            android:background="@color/sapphire"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="135dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Red lentil"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editInventoryEditText_redlentil"
+                android:layout_width="148dp"
+                android:layout_height="match_parent"
+                android:inputType="number"
+                android:enabled="true"
+                android:gravity="center"
+
+                android:hint="Enter amount (kilo)"
+                android:text=""
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/editInventoryEditButton_redlentil"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10sp"
+
+                android:text="Edit" />
+
+        </LinearLayout> <LinearLayout
+            android:id="@+id/ingEditPage_redpepper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_gravity="fill"
+            android:background="@color/sapphire"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="135dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Red pepper"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editInventoryEditText_redpepper"
+                android:layout_width="148dp"
+                android:layout_height="match_parent"
+                android:inputType="number"
+                android:enabled="true"
+                android:gravity="center"
+                android:hint="Enter amount (kilo)"
+                android:text=""
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/editInventoryEditButton_redpepper"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10sp"
+
+                android:text="Edit" />
+
+        </LinearLayout> <LinearLayout
             android:id="@+id/ingEditPage_spagetti"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -571,7 +699,7 @@
                 android:layout_width="135dp"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:text="Spagetti"
+                android:text="Spaghetti"
                 android:textSize="30sp"
                 android:textStyle="bold" />
 
@@ -580,6 +708,7 @@
                 android:layout_width="148dp"
                 android:layout_height="match_parent"
                 android:enabled="true"
+                android:inputType="number"
                 android:gravity="center"
                 android:hint="Enter amount (unit)"
                 android:text=""
@@ -617,6 +746,7 @@
                 android:layout_height="match_parent"
                 android:enabled="true"
                 android:gravity="center"
+                android:inputType="number"
                 android:hint="Enter amount (kilo)"
                 android:text=""
                 android:textSize="20sp" />
@@ -652,6 +782,7 @@
                 android:layout_width="148dp"
                 android:layout_height="match_parent"
                 android:enabled="true"
+                android:inputType="number"
                 android:gravity="center"
                 android:hint="Enter amount (kilo)"
                 android:text=""
@@ -689,12 +820,51 @@
                 android:layout_height="match_parent"
                 android:enabled="true"
                 android:gravity="center"
+                android:inputType="number"
                 android:hint="Enter amount (kilo)"
                 android:text=""
                 android:textSize="20sp" />
 
             <Button
                 android:id="@+id/editInventoryEditButton_tomatoes"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10sp"
+
+                android:text="Edit" />
+
+        </LinearLayout><LinearLayout
+            android:id="@+id/ingEditPage_tomatopaste"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_gravity="fill"
+            android:background="@color/sapphire"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="135dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Tomato paste"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editInventoryEditText_tomatopaste"
+                android:layout_width="148dp"
+                android:layout_height="match_parent"
+                android:inputType="number"
+                android:enabled="true"
+
+                android:gravity="center"
+                android:hint="Enter amount (volume)"
+                android:text=""
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/editInventoryEditButton_tomatopaste"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="10sp"
