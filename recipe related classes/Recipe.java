@@ -1,4 +1,4 @@
-package com.example.mycookit;
+package com.example.recipeclasses;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -43,7 +43,7 @@ public class Recipe {
 
                 Ingredient ing = Program.ingredientTypes[Program.findIndexOnIngTypeList(nameOfIng)];
 
-                IngredientInRecipe inginrec = new IngredientInRecipe(ing,amount, Integer.parseInt(inputType));
+                IngredientInRecipe inginrec = new IngredientInRecipe(ing,amount);
 
                 ingsInRecipe.add(inginrec);
                 

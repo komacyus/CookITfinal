@@ -1,10 +1,12 @@
-package com.example.mycookit;
+package com.example.recipeclasses;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.os.AsyncTask;
 import android.os.Bundle;
 
-import com.example.mycookit.R;
+import java.io.IOException;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -13,17 +15,44 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Program prog = new Program();
-
-        System.out.print(prog.ingredientTypes);
-        System.out.print(prog.breakfastRecipes);
-        System.out.print(prog.lunchRecipes);
-        System.out.print(prog.dinnerRecipes);
-
-        System.out.print(prog.dinnerRecipes);
+        Content c = new Content();
+        c.execute();
 
 
 
 
+    }
+
+    private class Content extends AsyncTask<Void, Void, Void> {
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+        }
+
+        @Override
+        protected Void doInBackground(Void... voids) {
+
+            Program prog;
+            try {
+
+                prog = new Program();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
+            System.out.print(Program.ingredientTypes);
+            System.out.print(Program.breakfastRecipes);
+            System.out.print(Program.lunchRecipes);
+            System.out.print(Program.dinnerRecipes);
+
+            System.out.print(Program.dinnerRecipes);
+            return null;
+        }
+
+        @Override
+        protected void onPostExecute(Void aVoid) {
+            super.onPostExecute(aVoid);
+        }
     }
 }

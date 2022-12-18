@@ -1,9 +1,10 @@
-package com.example.mycookit;
+package com.example.recipeclasses;
 
 
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -18,7 +19,7 @@ public class Program {
     public static Recipe[] lunchRecipes;
     public static Recipe[] dinnerRecipes;
 
-    public Program(){
+    public Program() throws IOException {
         ingredientTypes = new Ingredient[22];
         breakfastRecipes = new Recipe[2];
         lunchRecipes = new Recipe[2];
@@ -29,30 +30,30 @@ public class Program {
     }
 
 
-    public void fillIngredientTypesList(Ingredient[] ingredients){
+    public void fillIngredientTypesList(Ingredient[] ingredients) throws IOException {
 
-        ingredients[0] = new Ingredient("Onion",10, 5, "https://getir.com/en/product/onions-yTzj4LRUG0/");
-        ingredients[1] = new Ingredient("Garlic", 0, 0, "https://getir.com/en/product/garlic-iMUipaQ3du/");
-        ingredients[2] = new Ingredient("Tomato", 10, 8, "https://getir.com/en/product/tomatoes-V20EjsVe9f/");
-        ingredients[3] = new Ingredient("Carrot", 10, 8, "https://getir.com/en/product/carrots-JDeHsirl3B/");
-        ingredients[4] = new Ingredient("Potato", 10, 5, "https://getir.com/en/product/potatoes-skTF2UOKPB/");
-        ingredients[5] = new Ingredient("Mushroom", 1, 0, "https://getir.com/en/product/mushroom-x3dOI5I1PH/");
-        ingredients[6] = new Ingredient("Eggplant", 10, 5, "https://getir.com/en/product/eggplant-ntLXosWaIP/");
-        ingredients[7] = new Ingredient("Lemon", 0, 0, "https://getir.com/en/product/lemon-ZE9tYIwVO1/");
-        ingredients[8] = new Ingredient("Cucumber", 10, 8, "https://getir.com/en/product/cengelkoy-cucumbers-Iaqeb5cvWK/");
-        ingredients[9] = new Ingredient("Butter", 410, 1, "https://getir.com/en/product/sutas-yayik-tereyagi-jZOUi9pxxR/");
-        ingredients[10] = new Ingredient("Egg", 0, 0, "https://getir.com/en/product/cp-medium-size-omega-3-egg-eoM3sEWmjV/");
-        ingredients[11] = new Ingredient("Milk", 32, 5, "https://getir.com/en/product/icim-3-milk-gOKo1534BN/");
-        ingredients[12] = new Ingredient("Meat", 1, 0, "https://getir.com/en/more/product/bonfilet-20-fat-ground-beef-cPljHa1Xoi/");
-        ingredients[13] = new Ingredient("Chicken", 1, 0, "https://getir.com/en/more/product/gedik-chicken-breast-fillets-nrHgnHZ8J0/");
-        ingredients[14] = new Ingredient("Flaur", 31, 10, "https://getir.com/en/more/product/sinangil-un-Zwl6gHRi2y/");
-        ingredients[15] = new Ingredient("Rice", 31, 6, "https://getir.com/en/product/yayla-yerli-pilavlik-pirinc-IwtDiqY1kT/");
-        ingredients[16] = new Ingredient("Spaghetti", 0, 0, "https://getir.com/en/product/oba-spaghetti-makarna-500-gr-ttyqnzvura/");
-        ingredients[17] = new Ingredient("Olive_Oil", 42, 65, "https://getir.com/en/more/product/yudum-egemden-riviera-zeytinyagi-Qr9Ju0LHAA/");
-        ingredients[18] = new Ingredient("Green_Pepper", 10,10, "https://getir.com/urun/sivri-biber-wtrG77UZtI/" );
-        ingredients[19] = new Ingredient("Red_Pepper", 10,10,"https://getir.com/urun/kapya-biber-PkY92uC96K/" );
-        ingredients[20] = new Ingredient("Red_Lentil", 1,0, "https://getir.com/urun/raya-organik-kirmizi-mercimek-i3zc9wdneD/");
-        ingredients[21] = new Ingredient("Tomato_Paste", 41, 30, "https://getir.com/en/more/product/tat-pratik-domates-puresi-WImfLiucBT/" );
+        ingredients[0] = new Ingredient("Onion",1,1, 5, "https://getir.com/en/product/onions-yTzj4LRUG0/");
+        ingredients[1] = new Ingredient("Garlic", 1,0, 0, "https://getir.com/en/product/garlic-iMUipaQ3du/");
+        ingredients[2] = new Ingredient("Tomato", 1,0, 8, "https://getir.com/en/product/tomatoes-V20EjsVe9f/");
+        ingredients[3] = new Ingredient("Carrot", 1,0, 8, "https://getir.com/en/product/carrots-JDeHsirl3B/");
+        ingredients[4] = new Ingredient("Potato", 1,0, 5, "https://getir.com/en/product/potatoes-skTF2UOKPB/");
+        ingredients[5] = new Ingredient("Mushroom", 1, 1,0, "https://getir.com/en/product/mushroom-x3dOI5I1PH/");
+        ingredients[6] = new Ingredient("Eggplant", 1,0, 5, "https://getir.com/en/product/eggplant-ntLXosWaIP/");
+        ingredients[7] = new Ingredient("Lemon", 1, 0,0, "https://getir.com/en/product/lemon-ZE9tYIwVO1/");
+        ingredients[8] = new Ingredient("Cucumber", 1,0, 8, "https://getir.com/en/product/cengelkoy-cucumbers-Iaqeb5cvWK/");
+        ingredients[9] = new Ingredient("Butter", 1,4, 70, "https://getir.com/en/product/sutas-yayik-tereyagi-jZOUi9pxxR/");
+        ingredients[10] = new Ingredient("Egg", 0, 0, 0,"https://getir.com/en/product/cp-medium-size-omega-3-egg-eoM3sEWmjV/");
+        ingredients[11] = new Ingredient("Milk", 2,3, 5, "https://getir.com/en/product/icim-3-milk-gOKo1534BN/");
+        ingredients[12] = new Ingredient("Meat", 1, 1,0, "https://getir.com/en/more/product/bonfilet-20-fat-ground-beef-cPljHa1Xoi/");
+        ingredients[13] = new Ingredient("Chicken", 1, 1,0, "https://getir.com/en/more/product/gedik-chicken-breast-fillets-nrHgnHZ8J0/");
+        ingredients[14] = new Ingredient("Flour", 1,3, 10, "https://getir.com/en/more/product/sinangil-un-Zwl6gHRi2y/");
+        ingredients[15] = new Ingredient("Rice", 1,3, 6, "https://getir.com/en/product/yayla-yerli-pilavlik-pirinc-IwtDiqY1kT/");
+        ingredients[16] = new Ingredient("Spaghetti", 1,1, 0, "https://getir.com/en/product/oba-spaghetti-makarna-500-gr-ttyqnzvura/");
+        ingredients[17] = new Ingredient("Olive_Oil", 2,4, 65, "https://getir.com/en/more/product/yudum-egemden-riviera-zeytinyagi-Qr9Ju0LHAA/");
+        ingredients[18] = new Ingredient("Green_Pepper", 1,0,10, "https://getir.com/urun/sivri-biber-wtrG77UZtI/" );
+        ingredients[19] = new Ingredient("Red_Pepper", 1,0,10,"https://getir.com/urun/kapya-biber-PkY92uC96K/" );
+        ingredients[20] = new Ingredient("Red_Lentil", 1,3,7, "https://getir.com/urun/raya-organik-kirmizi-mercimek-i3zc9wdneD/");
+        ingredients[21] = new Ingredient("Tomato_Paste", 2,4, 30, "https://getir.com/en/more/product/tat-pratik-domates-puresi-WImfLiucBT/" );
 
 
 
@@ -90,7 +91,7 @@ public class Program {
         "*1 unit onion",
         "*1 unit carrot",
         "*2 spoon tomato_paste",
-        "*0.25 kg red_lentil",
+        "*1.5 glass red_lentil",
         
         "-Heat 3 tablespoons olive oil in a large pot (4 quarts or larger) over medium heat. Add the onion and cook, stirring occasionally, for 3 minutes. Add the carrot, and sauté until the vegetables soften, about 5 minutes.",
         "-Add the salça and stir until evenly distributed.",
@@ -138,23 +139,6 @@ public class Program {
 
     }
 
-
-    /**
-     *
-     * @param name name of ingredient that we are trying to
-     *             obtain the amount of.
-     * @return amount of the ingredient thas has given name parameter
-     */
-    public String getCurrentAmount(String name){
-
-        String s = "";
-        /*
-        for all elements of currIngredients
-            if name of element = name
-                return amount of element
-         */
-        return s;
-    }
 
     public static int findIndexOnIngTypeList(String name){
         for(int i = 0; i < ingredientTypes.length ; i++){
