@@ -6,10 +6,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 public class SearchRecipeActivity extends AppCompatActivity {
 
-    Button breakfastButton, lunchButton, dinnerButton;
+    ImageButton breakfastButton, lunchButton, dinnerButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

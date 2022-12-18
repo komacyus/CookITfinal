@@ -16,7 +16,7 @@
         <TextView
             android:id="@+id/textView_title"
             android:layout_width="match_parent"
-            android:layout_height="274dp"
+            android:layout_height="217dp"
             android:gravity="center"
             android:padding="8dp"
             android:scrollHorizontally="true"
@@ -26,33 +26,56 @@
             android:textSize="70sp"
             android:textStyle="bold" />
 
-        <Button
+        <ImageButton
             android:id="@+id/breakfast_button"
-            android:layout_width="match_parent"
+            style="@style/Widget.AppCompat.Button.Borderless"
 
-            android:textColor="@color/sapphire"
-            android:layout_height="104dp"
+            android:layout_width="match_parent"
+            android:layout_height="139dp"
+            android:background="@drawable/breakfast"
+
+            android:textColor="@color/black"
+            android:textSize="50sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
             android:text="Breakfast"
-            android:textSize="20sp"
-            />
-
-        <Button
+            android:gravity="center"
+            android:textStyle="bold"/>
+        <ImageButton
             android:id="@+id/lunch_button"
+            style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_width="match_parent"
-            android:textColor="@color/sapphire"
-            android:layout_height="104dp"
-            android:text="lunch"
-            android:textSize="20sp"
-            />
+            android:layout_height="129dp"
+            android:background="@drawable/lunch"
 
-        <Button
-            android:id="@+id/dinner_button"
-            android:layout_width="match_parent"
             android:textColor="@color/sapphire"
-            android:layout_height="104dp"
-            android:text="Dinner"
+            android:textSize="20sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:textSize="20sp"
-            />
+            android:text="Lunch"
+            android:gravity="center"
+            android:textStyle="bold"/>
+
+        <ImageButton
+            android:id="@+id/dinner_button"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="134dp"
+            android:background="@drawable/dinner"
+
+            android:textColor="@color/sapphire"
+            android:textSize="20sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Dinner"
+            android:gravity="center"
+            android:textStyle="bold"/>
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
