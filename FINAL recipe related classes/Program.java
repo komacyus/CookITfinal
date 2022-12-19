@@ -56,9 +56,9 @@ public class Program {
         ingredients[15] = new Ingredient("Rice", 1, 3, 6, "https://getir.com/en/product/yayla-yerli-pilavlik-pirinc-IwtDiqY1kT/");
         ingredients[16] = new Ingredient("Spaghetti", 1, 1, 0, "https://getir.com/en/product/oba-spaghetti-makarna-500-gr-ttyqnzvura/");
         ingredients[17] = new Ingredient("Olive_Oil", 2, 4, 65, "https://getir.com/en/more/product/yudum-egemden-riviera-zeytinyagi-Qr9Ju0LHAA/");
-        ingredients[18] = new Ingredient("Green_Pepper", 1, 0, 10, "https://getir.com/urun/sivri-biber-wtrG77UZtI/");
-        ingredients[19] = new Ingredient("Red_Pepper", 1, 0, 10, "https://getir.com/urun/kapya-biber-PkY92uC96K/");
-        ingredients[20] = new Ingredient("Red_Lentil", 1, 3, 7, "https://getir.com/urun/raya-organik-kirmizi-mercimek-i3zc9wdneD/");
+        ingredients[18] = new Ingredient("Green_Pepper", 1, 0, 10, "https://getir.com/en/product/thin-peppers-OoAKZ7WF2d/");
+        ingredients[19] = new Ingredient("Red_Pepper", 1, 0, 10, "https://getir.com/en/product/sweet-red-pepper-6KTkRxBXID/");
+        ingredients[20] = new Ingredient("Red_Lentil", 1, 3, 7, "https://getir.com/en/product/raya-organic-red-lentils-pSwx7Lvg2V/");
         ingredients[21] = new Ingredient("Tomato_Paste", 2, 4, 30, "https://getir.com/en/more/product/tat-pratik-domates-puresi-WImfLiucBT/");
 
 
@@ -176,5 +176,60 @@ public class Program {
 
         return current;
     }
+
+    public static String toStringCookableWithExtras(){
+        String s = "";
+
+        if(cookableWithExtras.isEmpty()){
+
+        }
+
+        else {
+            s += "You can cook the recipes listed down ";
+            s += "by purchasing only one ingredient !\n\n";
+
+            for (int i = 0; i < cookableWithExtras.size(); i++) {
+                String nameRecipe = cookableWithExtras.get(i).getName();
+                String nameIng = cookableWithExtras.get(i).getNameOfTheMissingIngToCookThis();
+                String url = cookableWithExtras.get(i).getURLofMissingIngToCookThis();
+                double price = cookableWithExtras.get(i).getMissingPriceToCookThis();
+                double amount = cookableWithExtras.get(i).getMissingAmountToCookThis();
+                String inputType = cookableWithExtras.get(i).getInputTypeOfMissingIngredient();
+                s += "_______________________________\n";
+                s += (i + 1) + "- " + nameRecipe + "\n";
+                s += "By purchasing " + amount + " " + inputType + " " + nameIng + "\n";
+                s += "for " + price + " TL " + "you can cook " + nameRecipe + "\n\n";
+                s += "Here is The Shopping Link Of " + nameIng + ":   \n " + url + " \n  " + "\n";
+            }
+
+        }
+        return s;
+
+    }
+
+    public static String toStringCookableWithCurrents(){
+
+        String s = "";
+
+        if(cookableWithCurrents.isEmpty()){
+            s += "There is no recipe you can cook with ingredients you have.";
+        }
+
+        else {
+            s += "You can cook the recipes listed down ";
+            s += "with ingredients you have !\n\n";
+
+            for (int i = 0; i < cookableWithCurrents.size(); i++) {
+                String nameRecipe = cookableWithCurrents.get(i).getName();
+                s += "_______________________________\n";
+                s += (i + 1) + "- " + nameRecipe + "\n";
+
+            }
+
+
+        }
+        return s;
+    }
+
 
 }

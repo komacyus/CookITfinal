@@ -18,6 +18,7 @@ public class Recipe {
     private boolean isCookableWithExtra;
     private double missingAmountToCookThis;
     private double missingPriceToCookThis;
+    private String inputTypeOfMissingIngredient;
     private String nameOfTheMissingIngToCookThis;
     private String URLofMissingIngToCookThis;
     private String mealType;
@@ -74,8 +75,13 @@ public class Recipe {
     }
 
 
+    public String getInputTypeOfMissingIngredient() {
+        return inputTypeOfMissingIngredient;
+    }
 
-
+    public void setInputTypeOfMissingIngredient(String inputTypeOfMissingIngredient) {
+        this.inputTypeOfMissingIngredient = inputTypeOfMissingIngredient;
+    }
 
     public ArrayList<String> getStepsList() {
         return stepsList;

@@ -6,7 +6,7 @@ import androidx.room.Database;
 import androidx.room.Room;
 import androidx.room.RoomDatabase;
 
-@Database(entities = CIngredient.class, version = 15)
+@Database(entities = CIngredient.class, version = 16)
 public abstract class IngDb extends RoomDatabase {
     public abstract CIngredientDao ingredientDao();
 

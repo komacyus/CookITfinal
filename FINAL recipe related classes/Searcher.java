@@ -1,11 +1,16 @@
 package com.example.recipeclasses;
 
+import android.icu.text.DecimalFormat;
+
 import java.io.IOException;
+import java.math.RoundingMode;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Searcher {
 
     ArrayList<Recipe> cookableWithCurrents = new ArrayList<>();
+
 
     public static void fillCookableWithCurrentsList(){
         boolean isCookable = true;
@@ -60,6 +65,7 @@ public class Searcher {
     public static void fillCookableWithExtrasList() throws IOException {
 
 
+        Program.cookableWithExtras.clear();
 
         for(int i = 0; i < Program.notCookableWithCurrents.size() ; i ++){
 
@@ -117,17 +123,19 @@ public class Searcher {
 
                     String nameOfMissingIngredient = missingIngredients.get(0).getIngredient().getName();
                     String URLofMissingIngredient = missingIngredients.get(0).getIngredient().getUrl();
-
+                    String inputTypeOfMissingIngredient = missingIngredients.get(0).getIngredient().getInputTypeString();
                     Program.ingredientTypes[Program.findIndexOnIngTypeList(nameOfMissingIngredient)].scrape();
 
 
-                    double missingPrice = missingIngredients.get(0).priceBasedOnInputTypeAmount(missingAmount);
 
+                    double missingPrice = missingIngredients.get(0).priceBasedOnInputTypeAmount(missingAmount);
+                    missingPrice = round(missingPrice,2);
 
                     Program.allRecipes[i].setMissingPriceToCookThis(missingPrice);
                     Program.allRecipes[i].setMissingAmountToCookThis(missingAmount);
                     Program.allRecipes[i].setNameOfTheMissingIngToCookThis(nameOfMissingIngredient);
                     Program.allRecipes[i].setURLofMissingIngToCookThis(URLofMissingIngredient);
+                    Program.allRecipes[i].setInputTypeOfMissingIngredient(inputTypeOfMissingIngredient);
 
                 }
 
@@ -142,10 +150,10 @@ public class Searcher {
                     neededAmount = notEnoughIngredients.get(0).getInputTypeAmount();
                     currentAmount = CurrentIngredientWithTheName(nameOfMissingIngredient).getInputTypeAmount();
                     missingAmount = neededAmount-currentAmount;
-
+                    String inputTypeOfMissingIngredient = missingIngredients.get(0).getIngredient().getInputTypeString();
                     Program.ingredientTypes[Program.findIndexOnIngTypeList(nameOfMissingIngredient)].scrape();
                     missingPrice = notEnoughIngredients.get(0).priceBasedOnInputTypeAmount(missingAmount);
-
+                    missingPrice = round(missingPrice,2);
 
 
                     String URLofMissingIngredient = notEnoughIngredients.get(0).getIngredient().getUrl();
@@ -156,6 +164,7 @@ public class Searcher {
                     Program.allRecipes[i].setMissingAmountToCookThis(missingAmount);
                     Program.allRecipes[i].setNameOfTheMissingIngToCookThis(nameOfMissingIngredient);
                     Program.allRecipes[i].setURLofMissingIngToCookThis(URLofMissingIngredient);
+                    Program.allRecipes[i].setInputTypeOfMissingIngredient(inputTypeOfMissingIngredient);
 
                 }
             }
@@ -223,5 +232,17 @@ public class Searcher {
             return false;
         }
     }
+
+    public static double round(double value, int places) {
+        if (places < 0) throw new IllegalArgumentException();
+
+        long factor = (long) Math.pow(10, places);
+        value = value * factor;
+        long tmp = Math.round(value);
+        return (double) tmp / factor;
+    }
+
+
+
 
 }

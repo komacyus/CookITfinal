@@ -139,6 +139,38 @@ public class Ingredient {
     }
 
 
+    public String getAmountForPriceFromWebsite() {
+        return amountForPriceFromWebsite;
+    }
+
+    public PriceScraper getPs() {
+        return ps;
+    }
+
+    public String getConsumeTypeString() {
+        return consumeTypeString;
+    }
+
+    public String getInputTypeString() {
+        return inputTypeString;
+    }
+
+    public void setPriceFromWebsite(String priceFromWebsite) {
+        this.priceFromWebsite = priceFromWebsite;
+    }
+
+    public void setPricePerConsumeTypeUnit(double pricePerConsumeTypeUnit) {
+        PricePerConsumeTypeUnit = pricePerConsumeTypeUnit;
+    }
+
+    public void setPricePerInputTypeUnit(double pricePerInputTypeUnit) {
+        PricePerInputTypeUnit = pricePerInputTypeUnit;
+    }
+
+    public void setPs(PriceScraper ps) {
+        this.ps = ps;
+    }
+
 
     public String toString() {
         return name + " " + inputType + " " + conversion;
