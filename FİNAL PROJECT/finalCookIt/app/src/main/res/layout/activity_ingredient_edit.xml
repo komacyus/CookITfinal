@@ -1,0 +1,909 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IngredientEditActivity"
+    android:background="@color/vivid"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+        <RelativeLayout
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/mediumpurple">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="8dp"
+                android:gravity="center"
+                android:text="Edit Your Inventory"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+
+
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:id="@+id/editIngredientScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:rowCount="30"
+            android:columnCount="1"
+            android:background="@color/viking">
+
+
+            <LinearLayout
+                android:id="@+id/ingEditPage_butter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_gravity="fill"
+                android:background="@color/sapphire"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="135dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Butter"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editInventoryEditText_butter"
+                    android:layout_width="148dp"
+                    android:layout_height="match_parent"
+                    android:enabled="true"
+                    android:gravity="center"
+                    android:inputType = "numberDecimal"
+                    android:hint="Enter amount (kilo)"
+                    android:text=""
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/editInventoryEditButton_butter"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10sp"
+
+                    android:text="Edit" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ingEditPage_carrot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_gravity="fill"
+                android:background="@color/sapphire"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="135dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Carrot"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editInventoryEditText_carrot"
+                    android:layout_width="148dp"
+                    android:layout_height="match_parent"
+                    android:enabled="true"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:hint="Enter amount (kilo)"
+                    android:text=""
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/editInventoryEditButton_carrot"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10sp"
+
+                    android:text="Edit" />
+
+            </LinearLayout>
+
+            <LinearLayout
+            android:id="@+id/ingEditPage_chicken"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_gravity="fill"
+            android:background="@color/sapphire"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="135dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Chicken"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editInventoryEditText_chicken"
+                android:layout_width="148dp"
+                android:layout_height="match_parent"
+                android:enabled="true"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:hint="Enter amount (kilo)"
+                android:text=""
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/editInventoryEditButton_chicken"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10sp"
+
+                android:text="Edit" />
+
+        </LinearLayout>
+            <LinearLayout
+            android:id="@+id/ingEditPage_cucumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_gravity="fill"
+            android:background="@color/sapphire"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="135dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Cucumber"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editInventoryEditText_cucumber"
+                android:layout_width="148dp"
+                android:layout_height="match_parent"
+                android:enabled="true"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:hint="Enter amount (kilo)"
+                android:text=""
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/editInventoryEditButton_cucumber"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10sp"
+
+                android:text="Edit" />
+
+        </LinearLayout> <LinearLayout
+            android:id="@+id/ingEditPage_egg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_gravity="fill"
+            android:background="@color/sapphire"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="135dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Egg"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editInventoryEditText_egg"
+                android:layout_width="148dp"
+                android:layout_height="match_parent"
+                android:enabled="true"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:hint="Enter amount (unit)"
+                android:text=""
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/editInventoryEditButton_egg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10sp"
+
+                android:text="Edit" />
+
+        </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ingEditPage_eggplant"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_gravity="fill"
+                android:background="@color/sapphire"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="135dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Eggplant"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editInventoryEditText_eggplant"
+                    android:layout_width="148dp"
+                    android:layout_height="match_parent"
+                    android:enabled="true"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:hint="Enter amount (kilo)"
+                    android:text=""
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/editInventoryEditButton_eggplant"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10sp"
+
+                    android:text="Edit" />
+
+            </LinearLayout><LinearLayout
+            android:id="@+id/ingEditPage_flour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_gravity="fill"
+            android:background="@color/sapphire"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="135dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Flour"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editInventoryEditText_flour"
+                android:layout_width="148dp"
+                android:layout_height="match_parent"
+                android:enabled="true"
+                android:inputType="numberDecimal"
+                android:gravity="center"
+                android:hint="Enter amount (kilo)"
+                android:text=""
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/editInventoryEditButton_flour"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10sp"
+
+                android:text="Edit" />
+
+        </LinearLayout><LinearLayout
+            android:id="@+id/ingEditPage_garlic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_gravity="fill"
+            android:background="@color/sapphire"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="135dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Garlic"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editInventoryEditText_garlic"
+                android:layout_width="148dp"
+                android:layout_height="match_parent"
+                android:enabled="true"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:hint="Enter amount (unit)"
+                android:text=""
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/editInventoryEditButton_garlic"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10sp"
+
+                android:text="Edit" />
+
+        </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ingEditPage_greenpepper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_gravity="fill"
+                android:background="@color/sapphire"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="135dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Green pepper"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editInventoryEditText_greenpepper"
+                    android:layout_width="148dp"
+                    android:layout_height="match_parent"
+                    android:inputType="numberDecimal"
+                    android:enabled="true"
+
+                    android:gravity="center"
+                    android:hint="Enter amount (kilo)"
+                    android:text=""
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/editInventoryEditButton_greenpepper"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10sp"
+
+                    android:text="Edit" />
+
+            </LinearLayout><LinearLayout
+            android:id="@+id/ingEditPage_lemon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_gravity="fill"
+            android:background="@color/sapphire"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="135dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Lemon"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editInventoryEditText_lemon"
+                android:layout_width="148dp"
+                android:layout_height="match_parent"
+                android:enabled="true"
+                android:inputType="numberDecimal"
+                android:gravity="center"
+                android:hint="Enter amount (unit)"
+                android:text=""
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/editInventoryEditButton_lemon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10sp"
+
+                android:text="Edit" />
+
+        </LinearLayout> <LinearLayout
+            android:id="@+id/ingEditPage_meat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_gravity="fill"
+            android:background="@color/sapphire"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="135dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Meat"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editInventoryEditText_meat"
+                android:layout_width="148dp"
+                android:layout_height="match_parent"
+                android:enabled="true"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:hint="Enter amount (kilo)"
+                android:text=""
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/editInventoryEditButton_meat"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10sp"
+
+                android:text="Edit" />
+
+        </LinearLayout> <LinearLayout
+            android:id="@+id/ingEditPage_milk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_gravity="fill"
+            android:background="@color/sapphire"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="135dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Milk"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editInventoryEditText_milk"
+                android:layout_width="148dp"
+                android:layout_height="match_parent"
+                android:enabled="true"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:hint="Enter amount (volume)"
+                android:text=""
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/editInventoryEditButton_milk"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10sp"
+
+                android:text="Edit" />
+
+        </LinearLayout>  <LinearLayout
+            android:id="@+id/ingEditPage_mushroom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_gravity="fill"
+            android:background="@color/sapphire"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="135dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Mushroom"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editInventoryEditText_mushroom"
+                android:layout_width="148dp"
+                android:layout_height="match_parent"
+                android:enabled="true"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:hint="Enter amount (kilo)"
+                android:text=""
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/editInventoryEditButton_mushroom"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10sp"
+
+                android:text="Edit" />
+
+        </LinearLayout> <LinearLayout
+            android:id="@+id/ingEditPage_oliveoil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_gravity="fill"
+            android:background="@color/sapphire"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="135dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Olive Oil"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editInventoryEditText_oliveoil"
+                android:layout_width="148dp"
+                android:layout_height="match_parent"
+                android:enabled="true"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:hint="Enter amount (volume)"
+                android:text=""
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/editInventoryEditButton_oliveoil"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10sp"
+
+                android:text="Edit" />
+
+        </LinearLayout> <LinearLayout
+            android:id="@+id/ingEditPage_onion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_gravity="fill"
+            android:background="@color/sapphire"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="135dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Onion"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editInventoryEditText_onion"
+                android:layout_width="148dp"
+                android:layout_height="match_parent"
+                android:enabled="true"
+                android:inputType="numberDecimal"
+                android:gravity="center"
+                android:hint="Enter amount (kilo)"
+                android:text=""
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/editInventoryEditButton_onion"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10sp"
+
+                android:text="Edit" />
+
+        </LinearLayout><LinearLayout
+            android:id="@+id/ingEditPage_redlentil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_gravity="fill"
+            android:background="@color/sapphire"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="135dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Red lentil"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editInventoryEditText_redlentil"
+                android:layout_width="148dp"
+                android:layout_height="match_parent"
+                android:inputType="numberDecimal"
+                android:enabled="true"
+                android:gravity="center"
+
+                android:hint="Enter amount (kilo)"
+                android:text=""
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/editInventoryEditButton_redlentil"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10sp"
+
+                android:text="Edit" />
+
+        </LinearLayout> <LinearLayout
+            android:id="@+id/ingEditPage_redpepper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_gravity="fill"
+            android:background="@color/sapphire"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="135dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Red pepper"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editInventoryEditText_redpepper"
+                android:layout_width="148dp"
+                android:layout_height="match_parent"
+                android:inputType="numberDecimal"
+                android:enabled="true"
+                android:gravity="center"
+                android:hint="Enter amount (kilo)"
+                android:text=""
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/editInventoryEditButton_redpepper"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10sp"
+
+                android:text="Edit" />
+
+        </LinearLayout> <LinearLayout
+            android:id="@+id/ingEditPage_spagetti"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_gravity="fill"
+            android:background="@color/sapphire"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="135dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Spaghetti"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editInventoryEditText_pasta"
+                android:layout_width="148dp"
+                android:layout_height="match_parent"
+                android:enabled="true"
+                android:inputType="numberDecimal"
+                android:gravity="center"
+                android:hint="Enter amount (unit)"
+                android:text=""
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/editInventoryEditButton_spagetti"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10sp"
+
+                android:text="Edit" />
+
+        </LinearLayout> <LinearLayout
+            android:id="@+id/ingEditPage_potato"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_gravity="fill"
+            android:background="@color/sapphire"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="135dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Potato"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editInventoryEditText_potato"
+                android:layout_width="148dp"
+                android:layout_height="match_parent"
+                android:enabled="true"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:hint="Enter amount (kilo)"
+                android:text=""
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/editInventoryEditButton_potato"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10sp"
+
+                android:text="Edit" />
+
+        </LinearLayout> <LinearLayout
+            android:id="@+id/ingEditPage_rice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_gravity="fill"
+            android:background="@color/sapphire"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="135dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Rice"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editInventoryEditText_rice"
+                android:layout_width="148dp"
+                android:layout_height="match_parent"
+                android:enabled="true"
+                android:inputType="numberDecimal"
+                android:gravity="center"
+                android:hint="Enter amount (kilo)"
+                android:text=""
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/editInventoryEditButton_rice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10sp"
+
+                android:text="Edit" />
+
+        </LinearLayout>  <LinearLayout
+            android:id="@+id/ingEditPage_tomatoes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_gravity="fill"
+            android:background="@color/sapphire"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="135dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Tomatoes"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editInventoryEditText_tomatoes"
+                android:layout_width="148dp"
+                android:layout_height="match_parent"
+                android:enabled="true"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:hint="Enter amount (kilo)"
+                android:text=""
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/editInventoryEditButton_tomatoes"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10sp"
+
+                android:text="Edit" />
+
+        </LinearLayout><LinearLayout
+            android:id="@+id/ingEditPage_tomatopaste"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_gravity="fill"
+            android:background="@color/sapphire"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="135dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Tomato paste"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editInventoryEditText_tomatopaste"
+                android:layout_width="148dp"
+                android:layout_height="match_parent"
+                android:inputType="numberDecimal"
+                android:enabled="true"
+
+                android:gravity="center"
+                android:hint="Enter amount (volume)"
+                android:text=""
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/editInventoryEditButton_tomatopaste"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10sp"
+
+                android:text="Edit" />
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </GridLayout>
+    </ScrollView>
+
+
+</LinearLayout>

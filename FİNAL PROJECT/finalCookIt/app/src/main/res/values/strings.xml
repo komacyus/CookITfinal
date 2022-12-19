@@ -1,0 +1,221 @@
+<resources>
+    <string name="app_name">CookIt</string>
+
+
+    <string name="breakfast_button">breakfast_button</string>
+    <string name="lunch_button">lunch_button</string>
+    <string name="dinner_button">dinner_button</string>
+
+    <string-array name="breakfastRecipesNames_txt">
+        <item>Egg Salad</item>
+        <item>Menemen</item>
+    </string-array>
+
+    <string-array name="breakfastRecipesDescription">
+
+
+        <item>Egg Salad
+
+*3 unit egg 
+*2 unit green_onion
+*2 unit parsley
+*4 tablespoon olive_oil
+*1 unit lemon
+*2 tablespoon salt
+*1 unit red_pepper
+*1 unit green_pepper
+
+-Put the eggs in a small saucepan. Cover with water to 1 inch above eggs. Boil eggs. Remove from heat. Drain the water of boiled eggs. Then, leave to cool eggs.
+-Peel the boiled eggs. Chop the way you want.
+-Put chopped eggs into a serving dish. Add the finely chopped parsley, dill, green onions, mint, olive oil, salt and black pepper. Mix thoroughly.
+-Serve
+</item>
+
+        <item>Menemen
+
+*1 tablespoon olive_oil
+*1 unit onion
+*1 unit green_pepper
+*1 tablespoon butter
+*4 unit tomato
+*4 unit egg
+- Heat oil in a large sauté pan over medium-high heat.  Add onion and peppers and sauté for 5 minutes, stirring occasionally, until softened.
+-Reduce heat to medium.  Add the tomatoes, butter plus a generous pinch of salt and black pepper.  Stir until evenly combined, then sauté for 2 more minutes, until the tomatoes are nice and hot.
+-Crack the eggs on top of the tomato mixture.  Let the eggs cook for about 1 minute.  Then use a spoon to break the yolks and briefly stir the eggs into the tomato mixture. Continue cooking until the eggs reach your desired level of doneness.
+-Serve immediately with your desired garnishes, along with some crusty sliced bread for dipping.
+</item>
+
+    </string-array>
+    <string-array name="lunchRecipesNames_txt">
+        <item>Mercimek Soup</item>
+        <item>Spaghetti</item>
+    </string-array>
+    <string-array name="lunchRecipesDescription">
+
+
+        <item>Mercimek Soup
+*3 tablespoon olive_oil
+*1 unit onion
+*1 unit carrot
+*2 tablespoon salça
+*250 gram red_lentil
+*1 teaspoon salt
+
+-Heat 3 tablespoons olive oil in a large pot (4 quarts or larger) over medium heat. Add the onion and cook, stirring occasionally, for 3 minutes. Add the carrot, and sauté until the vegetables soften, about 5 minutes.
+-Add the salça and stir until evenly distributed.
+-Let the soup come to a boil.
+-Turn the heat to low, place the lid on the pot, and let the soup simmer until the lentils and vegetables are tender, about 20 minutes.
+-Remove the soup from the heat. Use an immersion blender to purée the soup or work in batches and purée the soup in a blender with the lid cracked. 
+-Add lemon juice, salt, and pepper to taste.
+</item>
+        <item>Easy Spaghetti Recipe
+
+*250 gram spaghetti
+*2 tablespoon olive_oil
+*1 tablespoon butter
+
+-Cook the spaghetti according to the package instructions until al dente. Drain and set aside.
+-Heat up a skillet and add the olive oil and butter. Saute the garlic until aromatic, then add the spaghetti.
+-Season with salt, pepper, and chili flakes. Stir to combine well.
+-Dish out, garnish with some parsley and serve immediately.</item>
+
+    </string-array>
+    <string-array name="dinnerRecipesNames_txt">
+        <item>Meatballs</item>
+        <item>Chicken Saute</item>
+    </string-array>
+
+    <string-array name="dinnerRecipesDescription">
+
+
+        <item>Meatballs
+
+*800 gram ground_beef
+*2 unit onion
+*2 teaspoon salt
+*1 teaspoon black_pepper
+*1 over 4 glass water
+*1 teaspoon baking soda
+
+1. Get a small onion or some shallots cooking in oil. Once they\'ve softened, let them cool -- they\'ll be going in your meatballs.
+ 2. In a large bowl, mix up the ground meat  with your cooled onions, tomato paste, cheese,  breadcrumbs (I use panko), a splash of milk, and an egg. If it feels too wet, add more breadcrumbs and/or cheese. I love a ton of cheese, to be candid. If you have some parsley or oregano and people who don\'t balk at green in their meatballs, you may chop a bit up and add it.
+3. Make balls in your hand about the size of two golf balls into one. Please keep them uniform so they cook evenly.
+4. Refill your frying pan with a enough oil to cover the balls halfway. Get it going till shimmering. (Alternately, you can simmer the balls in your sauce.) Add the balls one at a time. Do not crowd them. You may well have to do this in batches.
+5.  Nudge them around the pan with a spatula from time to time. The key here is to keep them from burning, but also to cook them all the way through. You will end up with some that are more crispy than others but just try to control the heat. Pick a sentinel meatball to test for doneness. This should take about ten minutes.
+Serve
+</item>
+
+        <item>Chicken Saute
+
+*1 kg chicken
+*1 unit red_pepper
+*1 unit green_pepper
+*1 unit onion
+*5 tablespoon olive_oil
+*0.5 glass water
+
+Put the olive oil to the saucepan and then add the cubed cut chicken breasts. Saute them at medium heat about 3 minutes. Add sliced onions, garlic and continue to saute all until onions get softy.
+Add the julienne cut red, orange and green sweet peppers, ground paprika and saute them about 7 minutes until sweet peppers get softy.
+Add the soy sauce and continue to stir all about 2-3 minutes. Then add the 1/2 cup of water and close the saucepan lid and let it cook 20 minutes at low-medium heat.
+</item>
+    </string-array>
+
+    <string-array name="allRecipes">
+        <item>Egg Salad</item>
+        <item>Menemen</item>
+        <item>Mercimek Soup</item>
+        <item>Spaghetti</item>
+        <item>Meatballs</item>
+        <item>Chicken Saute</item>
+
+    </string-array>
+
+    <string-array name="allDescriptions">
+          <item>Egg Salad
+
+*3 unit egg
+*2 unit green_onion
+*2 unit parsley
+*4 tablespoon olive_oil
+*1 unit lemon
+*2 tablespoon salt
+*1 unit red_pepper
+*1 unit green_pepper
+
+-Put the eggs in a small saucepan. Cover with water to 1 inch above eggs. Boil eggs. Remove from heat. Drain the water of boiled eggs. Then, leave to cool eggs.
+-Peel the boiled eggs. Chop the way you want.
+-Put chopped eggs into a serving dish. Add the finely chopped parsley, dill, green onions, mint, olive oil, salt and black pepper. Mix thoroughly.
+-Serve
+</item>
+        <item>Menemen
+
+*1 tablespoon olive_oil
+*1 unit onion
+*1 unit green_pepper
+*1 tablespoon butter
+*4 unit tomato
+*4 unit egg
+- Heat oil in a large sauté pan over medium-high heat.  Add onion and peppers and sauté for 5 minutes, stirring occasionally, until softened.
+-Reduce heat to medium.  Add the tomatoes, butter plus a generous pinch of salt and black pepper.  Stir until evenly combined, then sauté for 2 more minutes, until the tomatoes are nice and hot.
+-Crack the eggs on top of the tomato mixture.  Let the eggs cook for about 1 minute.  Then use a spoon to break the yolks and briefly stir the eggs into the tomato mixture. Continue cooking until the eggs reach your desired level of doneness.
+-Serve immediately with your desired garnishes, along with some crusty sliced bread for dipping.
+</item>
+        <item>Mercimek Soup
+*3 tablespoon olive_oil
+*1 unit onion
+*1 unit carrot
+*2 tablespoon salça
+*250 gram red_lentil
+*1 teaspoon salt
+
+-Heat 3 tablespoons olive oil in a large pot (4 quarts or larger) over medium heat. Add the onion and cook, stirring occasionally, for 3 minutes. Add the carrot, and sauté until the vegetables soften, about 5 minutes.
+-Add the salça and stir until evenly distributed.
+-Let the soup come to a boil.
+-Turn the heat to low, place the lid on the pot, and let the soup simmer until the lentils and vegetables are tender, about 20 minutes.
+-Remove the soup from the heat. Use an immersion blender to purée the soup or work in batches and purée the soup in a blender with the lid cracked. 
+-Add lemon juice, salt, and pepper to taste.
+</item>
+        <item>Easy Spaghetti Recipe
+
+*250 gram spaghetti
+*2 tablespoon olive_oil
+*1 tablespoon butter
+
+-Cook the spaghetti according to the package instructions until al dente. Drain and set aside.
+-Heat up a skillet and add the olive oil and butter. Saute the garlic until aromatic, then add the spaghetti.
+-Season with salt, pepper, and chili flakes. Stir to combine well.
+-Dish out, garnish with some parsley and serve immediately.</item>
+
+        <item>Meatballs
+
+*800 gram ground_beef
+*2 unit onion
+*2 teaspoon salt
+*1 teaspoon black_pepper
+*1 over 4 glass water
+*1 teaspoon baking soda
+
+1. Get a small onion or some shallots cooking in oil. Once they\'ve softened, let them cool -- they\'ll be going in your meatballs.
+ 2. In a large bowl, mix up the ground meat  with your cooled onions, tomato paste, cheese,  breadcrumbs (I use panko), a splash of milk, and an egg. If it feels too wet, add more breadcrumbs and/or cheese. I love a ton of cheese, to be candid. If you have some parsley or oregano and people who don\'t balk at green in their meatballs, you may chop a bit up and add it.
+3. Make balls in your hand about the size of two golf balls into one. Please keep them uniform so they cook evenly.
+4. Refill your frying pan with a enough oil to cover the balls halfway. Get it going till shimmering. (Alternately, you can simmer the balls in your sauce.) Add the balls one at a time. Do not crowd them. You may well have to do this in batches.
+5.  Nudge them around the pan with a spatula from time to time. The key here is to keep them from burning, but also to cook them all the way through. You will end up with some that are more crispy than others but just try to control the heat. Pick a sentinel meatball to test for doneness. This should take about ten minutes.
+Serve
+</item>
+
+        <item>Chicken Saute
+
+*1 kg chicken
+*1 unit red_pepper
+*1 unit green_pepper
+*1 unit onion
+*5 tablespoon olive_oil
+*0.5 glass water
+
+Put the olive oil to the saucepan and then add the cubed cut chicken breasts. Saute them at medium heat about 3 minutes. Add sliced onions, garlic and continue to saute all until onions get softy.
+Add the julienne cut red, orange and green sweet peppers, ground paprika and saute them about 7 minutes until sweet peppers get softy.
+Add the soy sauce and continue to stir all about 2-3 minutes. Then add the 1/2 cup of water and close the saucepan lid and let it cook 20 minutes at low-medium heat.
+</item>
+    </string-array>
+
+</resources>
