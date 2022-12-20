@@ -92,7 +92,7 @@ public class SuggestMeMoreActivity extends AppCompatActivity implements Recycler
         //String[] allRecipeNames = getResources().getStringArray(R.array.allRecipes);
         // String[] allRecipeDescription = getResources().getStringArray(R.array.allDescriptions);
 
-        String[] allRecipeNames = {"Egg Salad", "Menemen","Mercimek Soup", "Spaghetti", "Meatball", "Chicken Saute"};
+        String[] allRecipeNames = {"Egg Salad", "Menemen","Lentil Soup", "Spaghetti", "Meatball", "Chicken Saute"};
         String[] allRecipeDescription = {"Egg Salad\n"+
                 "*3 unit egg\n"+
                 "*2 unit green_onion\n"+
@@ -121,7 +121,7 @@ public class SuggestMeMoreActivity extends AppCompatActivity implements Recycler
                         "-Reduce heat to medium.  Add the tomatoes, butter plus a generous pinch of salt and black pepper.  Stir until evenly combined, then sauté for 2 more minutes, until the tomatoes are nice and hot.\n"+
                         "-Crack the eggs on top of the tomato mixture.  Let the eggs cook for about 1 minute.  Then use a spoon to break the yolks and briefly stir the eggs into the tomato mixture. Continue cooking until the eggs reach your desired level of doneness.\n"+
                         "-Serve immediately with your desired garnishes, along with some crusty sliced bread for dipping.\n"
-                , "Mercimek Soup\n"+
+                , "Lentil Soup\n"+
                 "*3 tablespoon olive_oil\n"+
                 "*1 unit onion\n"+
                 "*1 unit carrot\n"+

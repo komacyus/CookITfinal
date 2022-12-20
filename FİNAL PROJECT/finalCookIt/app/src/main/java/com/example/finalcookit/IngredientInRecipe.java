@@ -13,6 +13,7 @@ public class IngredientInRecipe {
         this.inputTypeAmount = convertConsumeAmountToInputAmount();
 
 
+
     }
 
     public double priceBasedOnInputTypeAmount(Double inputTypeAmount){

@@ -186,7 +186,7 @@ public class Program {
         }
 
         else {
-            s += "You can cook the recipes listed down ";
+            s += "You can cook the recipe down ";
             s += "by purchasing only one ingredient !\n\n";
 
 
@@ -196,10 +196,14 @@ public class Program {
                 double price = cookableWithExtras.get(0).getMissingPriceToCookThis();
                 double amount = cookableWithExtras.get(0).getMissingAmountToCookThis();
                 String inputType = cookableWithExtras.get(0).getInputTypeOfMissingIngredient();
+                String websiteAmount = cookableWithExtras.get(0).getAmountOfMissingIngOnWebsite();
+                String websitePrice = cookableWithExtras.get(0).getPriceOfMissingIngOnWebsite();
+
                 s += "_______________________________\n";
                 s += "- " + nameRecipe + "\n";
-                s += "By purchasing " + amount + " " + inputType + " " + nameIng + "\n";
-                s += "for " + price + " TL " + "you can cook " + nameRecipe + "\n\n";
+                s += "You need " + amount + " " + inputType + " " + nameIng + "\n";
+                s+= "to cook " + nameRecipe;
+                s += " for " + websitePrice + "\n" + "you can buy " +  websiteAmount +" " +inputType+" "+ nameIng  +  "\n\n";
 
 
 

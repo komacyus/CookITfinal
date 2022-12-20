@@ -131,6 +131,12 @@ public class Searcher {
                     double missingPrice = missingIngredients.get(0).priceBasedOnInputTypeAmount(missingAmount);
                     missingPrice = round(missingPrice,2);
 
+                    String priceOfMissingIngOnWebsite = missingIngredients.get(0).getIngredient().getPriceFromWebsite();
+                    String amountOfMissingIngOnWebsite  = missingIngredients.get(0).getIngredient().getAmountForPriceFromWebsite();
+
+                    Program.notCookableWithCurrents.get(i).setAmountOfMissingIngOnWebsite(amountOfMissingIngOnWebsite);
+                    Program.notCookableWithCurrents.get(i).setPriceOfMissingIngOnWebsite(priceOfMissingIngOnWebsite);
+
                     Program.notCookableWithCurrents.get(i).setMissingPriceToCookThis(missingPrice);
                     Program.notCookableWithCurrents.get(i).setMissingAmountToCookThis(missingAmount);
                     Program.notCookableWithCurrents.get(i).setNameOfTheMissingIngToCookThis(nameOfMissingIngredient);
@@ -157,8 +163,6 @@ public class Searcher {
 
 
                     String URLofMissingIngredient = notEnoughIngredients.get(0).getIngredient().getUrl();
-
-
 
                     Program.notCookableWithCurrents.get(i).setMissingPriceToCookThis(missingPrice);
                     Program.notCookableWithCurrents.get(i).setMissingAmountToCookThis(missingAmount);

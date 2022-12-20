@@ -16,6 +16,8 @@ public class Recipe {
     private boolean isFavorite;
     private boolean isCookableWithCurrent;
     private boolean isCookableWithExtra;
+    private String priceOfMissingIngOnWebsite;
+    private String amountOfMissingIngOnWebsite;
     private double missingAmountToCookThis;
     private double missingPriceToCookThis;
     private String inputTypeOfMissingIngredient;
@@ -60,6 +62,18 @@ public class Recipe {
 
     public void setURLofMissingIngToCookThis(String URLofMissingIngToCookThis) {
         this.URLofMissingIngToCookThis = URLofMissingIngToCookThis;
+    }
+
+    public String getAmountOfMissingIngOnWebsite() {
+        return amountOfMissingIngOnWebsite;
+    }
+
+    public void setPriceOfMissingIngOnWebsite(String priceOfMissingIngOnWebsite) {
+        this.priceOfMissingIngOnWebsite = priceOfMissingIngOnWebsite;
+    }
+
+    public void setAmountOfMissingIngOnWebsite(String amountOfMissingIngOnWebsite) {
+        this.amountOfMissingIngOnWebsite = amountOfMissingIngOnWebsite;
     }
 
     public String getURLofMissingIngToCookThis() {
@@ -130,6 +144,9 @@ public class Recipe {
         isCookableWithExtra = cookableWithExtra;
     }
 
+    public String getPriceOfMissingIngOnWebsite() {
+        return priceOfMissingIngOnWebsite;
+    }
 
 
     public void setFavorite(boolean favorite) {
@@ -150,7 +167,9 @@ public class Recipe {
 
     public void addToFavorites(){
         setFavorite(true);
-    }     
+    }
+
+
 }
 
 
