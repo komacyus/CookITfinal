@@ -1,7 +1,7 @@
 # CookITfinal
 CS102 Project
 
-This project is a recipe based application that has variosu additional features that other recipe based applications don’t have.
+This project is a recipe based application that has various additional features that other recipe based applications don’t have.
 
 To run the code:
 
@@ -15,5 +15,7 @@ To run the code:
 
 You need a proper internet connection to use the application.
 
+If run button cannot be clicked, press "Add Configuration" > "Add new..." > "Android App", then specify the module in "General" and press "OK".
 
+Make sure that API level of emulator and "compileSdk" and "targetSdk" in the build.gradle page are same.
 
