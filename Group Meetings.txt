@@ -1,0 +1,8 @@
+12.12.2022
+Decided what each member should learn or do for their part.
+
+18.12.2022
+Implemented some part of project and integrated the parts we done individually.
+
+19.12.2022
+Integrated the remaining parts of the project, fixed the bugs and finished the project.
