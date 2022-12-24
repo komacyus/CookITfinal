@@ -1,0 +1,5 @@
+Erkan Can Arslan Personal Log
+
+Implemented the price scraping module by using html and Soup.
+İmproved Recipe related classes to make them compatible with database
+İmplemented searching algorithms that are working with database and user interface.
