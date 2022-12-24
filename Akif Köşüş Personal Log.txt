@@ -1,5 +1,5 @@
 Week 13 -> Learned how to use Android Studio.
 
-Week 14 -> Designed database for current ingredients of the user, made it compatible with our user interface and transferred the information in database to our Program class.
+Week 14 -> Designed database for current ingredients of the user, made it compatible with our user interface and transferred the information in database to our Program class. Also, added some methods for database in Program class.
 
 Week 15 -> Designed favorites database for the recipes that will be displayed on favorites page of our app.
