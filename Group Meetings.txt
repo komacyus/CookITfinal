@@ -1,8 +1,41 @@
-12.12.2022
-Decided what each member should learn or do for their part.
+28 September:
+It was decided which program will be made and the name of it.
 
-18.12.2022
-Implemented some part of project and integrated the parts we done individually.
+5 October:
+It was decided that the fundamentals of the application.
+It was decided the which additional features will be added.
+It was decided to use data scraping.
 
-19.12.2022
-Integrated the remaining parts of the project, fixed the bugs and finished the project.
+
+12 October:
+Requirement report was prepared.
+
+19 October:
+It decided the general flow of user interface. 
+
+26 October:
+It was decided to general design of user interface.
+
+2 November:
+The user interface report was prepared.
+The user interface presentation was prepared
+
+9 November:
+It was decided how to tasks will be shared to each group member.
+
+16 November:
+It was decided how to recipes will be stored.
+
+23 November:
+The detailed design report was prepared.
+
+30 November:
+It was decided how databases system will be used and the recipes will be stored.
+
+7 December:
+The code of the program was started to be written.
+
+14 December:
+The all codes was written by group members are gathered.
+The final version of application was made.
+The final presentation was prepared.

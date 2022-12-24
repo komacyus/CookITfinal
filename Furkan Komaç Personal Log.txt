@@ -1,0 +1,6 @@
+Furkan Komaç Personal Log
+
+Improved the recipe and ingredient related classes.
+Improved the program class.
+Preparing some reports and presentations.
+
