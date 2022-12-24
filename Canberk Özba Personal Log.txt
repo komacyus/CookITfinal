@@ -1,0 +1,33 @@
+Canberk Özba personal log
+
+Week 12
+
+28.11.2022 --> 9.00-12.30 (An initial attempt to do a user interface)
+
+29.11.2022 --> 8.30-12.00 (Searching and understanding the basic structures of XML files)
+
+04.12.2022 --> 11.00-17.00 (Searching for recycler view)
+
+Week13
+
+05.12.2022 --> 10.00-12.30 (Searching for recycler view and implementing it into code)
+
+11.12.2022 --> 10.00-17.30 (Creating activites)
+
+Week14
+
+15.12.2022 --> 19.00-21.30 (Activites and dependencies from one to another class)
+
+16.12.2022 --> 22.00-23.00 (Bacground colors, texts, edit text, buttons, recycler view implementation)
+
+17.12.2022 --> 10.00-18.30 (Adding images, and implementing the recipes and their description)
+
+18.12.2022 --> 8.00-14.45 (Final additions, dynamic background colors, editing the dependencies between classes)
+
+18.12.2022 -->15.30-19.00 (merging the codes)
+
+Week 15
+
+19.12.2022 --> 17.30-21.30  (merging the codes, bug fixing)
+
+20.12.2022 --> 17.30-21.00  (merging the codes, bug fixing)
