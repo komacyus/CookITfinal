@@ -5,6 +5,7 @@ This project is a recipe based application that has variosu additional features 
 
 To run the code:
 1-Android Studio is needed.
+
 2-Click open a new project.
 3-Open the folder named “finalcookit” 
 4-Path of the folder you must open: Project Code/finalcookit
