@@ -9,5 +9,7 @@ To run the code:
 3-Open the folder named “finalcookit” 
 4-Path of the folder you must open: Project Code/finalcookit
 
+You need a proper internet connection to use the application.
+
 
 
