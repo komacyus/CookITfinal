@@ -15,7 +15,7 @@ To run the code:
 
 You need a proper internet connection to use the application.
 
-If run button cannot be clicked, press "Add Configuration" > "Add new..." > "Android App", then specify the module in "General" and press "OK".
+If run button cannot be clicked, press "Add Configuration" > "Add new..." > "Android App", then specify the module which will include the package name in "General" heading and press "OK".
 
 Make sure that API level of emulator and "compileSdk" and "targetSdk" in the build.gradle page are same.
 
